@@ -1,0 +1,330 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+{% if request.method == 'POST' %}
+<div class="con-pop edit"  style="display:block;">
+ {% else %}
+<div class="con-pop edit"style="display:none;">
+ {% endif %}
+<div class="container popup">
+    <div style="height: 324px; transition: height 250ms ease 0ms;">
+        <div class="react-reveal linkItemDataCont" style="animation-fill-mode: both; animation-duration: 875ms; animation-delay: 125ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-1;">
+
+                <form action="{% url 'add_cart' %}" name="form" method="post" enctype='multipart/form-data'>
+                            {% csrf_token %}
+                <div class="row">
+                <div class="no-padding imgco col-lg-2 col-md-2 col-sm-2 col-2">
+                    <div class="imgdiv">
+                        <img src="{{img}}" alt="" >
+                        <input name="img" value="{{img}}" hidden>
+                    </div>
+                </div>
+                <div class="no-padding col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="datadiv">
+                       <img src="/img/brands/amazon-logo.png" alt="" width="70.8px" >
+                         <input name="logo" value="{{logo}}" hidden>
+                        <h2><input name="title" placeholder="Title" value="{{title}}"></h2>
+                        <a target="_blank" href="{{url}}" name="url">
+                             <input name="url" value="{{url}}" hidden>
+                        {{ url|slice:":80" }} .....
+                        </a>
+                            <div class="form-row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Category" %}
+                                    </label>
+                                    <select class="form-control" name="category">
+                                        <option value="Select category" disabled="">{% trans "Select category" %}</option>
+                                        <option value="Clothes/Shoes/Bags/Wallets">{% trans "Clothes/Shoes/Bags/Wallets" %}</option>
+                                        <option value="Electronics">{% trans "Electronics" %}</option>
+                                        <option value="Electronics with Bluetooth">{% trans "Electronics with Bluetooth" %}</option>
+                                        <option value="Laptops/Computers">{% trans "Laptops/Computers" %}</option>
+                                        <option value="Game Consoles">{% trans "Game Consoles" %}</option>
+                                        <option value="Video Games">{% trans "Video Games" %}</option>
+                                        <option value="Mobile Phone/Tablet">{% trans "Mobile Phone/Tablet" %}</option>
+                                        <option value="Mobile Accessory/Case/Screen Protector">{% trans "Mobile Accessory/Case/Screen Protector" %}</option>
+                                        <option value="Watches/Sunglasses/Eyeglasses">{% trans "Watches/Sunglasses/Eyeglasses" %}</option>
+                                        <option value="Cosmetics">{% trans "Cosmetics" %}</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Color" %}</label>
+                                    <input placeholder="Type color" type="text" class="form-control"  name="color">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Size" %}</label>
+                                    <input placeholder="Type size" type="text" class="form-control"  name="size">
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Qty" %}</label>
+                                    <input inputmode="numeric" min="1" type="number" class="form-control" name="qty">
+                                </div>
+                            </div>
+
+                        </div>
+                    <div class="datadiv">
+                        <div class="addcouponsec"><h3>{% trans "Add your promo code" %}</h3>
+                                    <input placeholder="Add Coupon Code To Get Discount" type="text" name="promo" class="form-control" value="">
+                            <div><div class="Loading__loading___1m_fZ">
+                                <div class="Loading__bar___21yOt" style="background: rgb(255, 146, 88); width: 0%; display: none;">
+                                    <div class="Loading__peg___3Y_28">
+
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="Loading__spinner___11Pm4">
+                                    <div class="Loading__icon___3OOyu" style="display: none; border-color: rgb(255, 146, 88);">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="addcol col-lg-2 col-md-2 col-sm-2 col-2">
+                            <div class="form-row mt-5 text-danger">
+                                <div class="col">
+                                    <h5 class="form-label">{% trans "Price ($)" %}</h5>
+                                    <h6><input name="price" placeholder="Price" value="{{price}}"></h6>
+                                </div>
+                            </div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            <img src="/img/path.png" alt="" class="mr-2">{% trans "Add" %}
+                        </button>
+                    </div>
+                </form>
+                </div>
+                <img src="{% static 'images/removefromcat.png' %}" class="removeim" alt="" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="con-pop edit_1"style="display:none;">
+<div class="container popup">
+    <div style="height: 324px; transition: height 250ms ease 0ms;">
+        <div class="react-reveal linkItemDataCont" style="animation-fill-mode: both; animation-duration: 875ms; animation-delay: 125ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-1;">
+
+                <form action="" name="form" method="post" enctype='multipart/form-data'>
+                            {% csrf_token %}
+                <div class="row">
+                <div class="no-padding imgco col-lg-2 col-md-2 col-sm-2 col-2">
+                    <div class="imgdiv">
+                        <img src="{{edit.img}}" alt="" >
+                        <input name="img" value="{{edit.img}}" hidden>
+                    </div>
+                </div>
+                <div class="no-padding col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="datadiv">
+                       <img src="/img/brands/amazon-logo.png" alt="" width="70.8px" >
+                         <input name="logo" value="{{edit.logo}}" hidden>
+                        <h2><input name="title" placeholder="Title" id="title" value="{{edit.title}}"></h2>
+                        <a target="_blank" href="{{edit.url}}" name="url">
+                             <input name="url" value="{{edit.url}}" hidden>
+                        {{ url|slice:":80" }} .....
+                        </a>
+                            <div class="form-row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Category" %}
+                                    </label>
+                                    <select class="form-control" id="category" name="category">
+                                        <option value="{{edit.category}}" >{% trans "Select category" %}</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Color" %}</label>
+                                    <input placeholder="Type color" id="color" value="{{ edit.color }}" type="text" class="form-control"  name="color">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Size" %}</label>
+                                    <input placeholder="Type size" id="size" value="{{ edit.size }}" type="text" class="form-control"  name="size">
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Qty" %}</label>
+                                    <input inputmode="numeric" min="1" id="qty" value="{{ edit.qty }}" type="number" class="form-control" name="qty">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="addcol col-lg-2 col-md-2 col-sm-2 col-2">
+                            <div class="form-row mt-5 text-danger">
+                                <div class="col">
+                                    <h5 class="form-label">{% trans "Price ($)" %}</h5>
+                                    <h6><input name="price" placeholder="Price" value="{{edit.price}}"></h6>
+                                </div>
+                            </div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            <img src="/img/path.png" alt="" class="mr-2">{% trans "Add" %}
+                        </button>
+                    </div>
+                </form>
+                </div>
+                <img src="{% static 'images/removefromcat.png' %}" class="removeim" alt="" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="addcouponsec top"><h3>{% trans "Drop your product’s link here" %}</h3>
+        <form method="post" action="{% url 'api' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <input placeholder="Paste your product link: https://www.amazon.com/432221" type="text" class="form-control"  name="url">
+                <button type="submit" class="btn btn-primary get">{% trans "Get It" %}</button>
+            </div>
+        </form>
+    </div>
+{% if orders %}
+    <div class="cartItems row">
+
+        <div class="paddinginlg col-md-8">
+
+            <h1>{% trans "My items" %}<span> ({{count}} {% trans "Item/s" %})</span>
+                <a href="{% url 'clear_cart' %}">
+                <span class="clearcart">
+                    <img src="/img/clearcart.png" alt=""> {% trans "Clear cart" %}</span></a></h1>
+            {% for order in orders %}
+            <form method="post" action="{% url 'edit_itm' order.id %}" id="items">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <div class="react-reveal cartItemDataCont" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-3;">
+                            <div class="row">
+                                <div class="imgco col-lg-3 col-md-3 col-sm-2 col-12">
+                                    <div class="imgdiv"><img tabindex="0" src="{{order.img_url}}"
+                                                             alt="{{order.title}}"
+                                                             class="img" style="cursor: zoom-in; max-width: 130px;"></div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-8 col-12">
+                                    <div class="datadiv">
+                                        <img src="/img/brands/amazon-logo.png" alt="" width="70.8px">
+                                        <h2><input name="title" value="{{order.title}}"></h2>
+                                        <a target="_blank" href="{{order.url}}">{{order.url|slice:":80" }} .....</a>
+                                        <div class="itemData"><h5>
+                                            <span>{% trans "Category:" %}</span><input name="category" value="{{order.category}}"> </h5>
+                                            <h5><span>{% trans "Color:" %}</span><input name="color" value="{{order.color}}"> </h5>
+                                            <h5><span>{% trans "Size:" %}</span><input name="size" value="{{order.size}}"> </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" addcol text-center col-lg-2 col-md-2 col-sm-2 col-12">
+                                    <h5 class="h3e">{{order.price}}</h5>
+                                    <form class=""><div class="form-row">
+                                        <div class="col">
+                                            <label class="form-label">{% trans "Qty" %}</label>
+                                            <input type="number" class="form-control" value="{{order.Qty}}" name="qty"></div>
+                                    </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                            <div>
+                               <button type="submit" class="edititem btn btn-outline-secondary" style="display:none;">{% trans 'Save' %}</button>
+                                <a href="{% url 'delete_itm' order.id %}"><img src="{% static 'images/removefromcat.png' %}" class="removeim" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                        </form>
+                {%  endfor %}
+                    </div>
+                <div class="col-md-4 no-padding">
+            <div class="breakdowndiv ">
+                 <div class="list-group">
+                    {% if calculate %}
+                    {% for cal in calculate %}
+                    <div class="list-group-item">{% trans "Total Online Price" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.OnlinePrice }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Customs" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{{ cal.Customs }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "VAT" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.VAT }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "E-Shhnli Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.EShhnliFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Int. Shipping" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.IntShipping }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Delivery Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.DeliveryFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Subtotal" %}<span>{{ cal.Subtotal }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Discount" %}<span>{{ cal.Subtotal }}</span></div>
+                    <div class="list-group-item">{% trans "Total ($)" %}<span>{{ cal.Total }}</span>
+                    </div>
+                </div>
+
+                <div class="totalcart">
+                    <span class="span1">
+                        <img src="{% static 'images/total.png' %}" alt="">
+                        <img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <br>
+                        <h4>{% trans "Total" %} </h4>
+                    </span>
+                    <span class="totalamount">
+                        <span class="span2">{{ cal.Total }}<span class="egpf"> EGP</span>
+                        </span>
+                    </span>
+                </div>
+                {% endfor %}
+                <div class="list-group">
+                    {% else %}
+                    <div class="list-group-item">{% trans "Total Online Price" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Customs" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "VAT" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "E-Shhnli Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Int. Shipping" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt=""><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Delivery Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Subtotal" %}<span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Discount" %}<span>{% trans 'calculating ...' %}</span></div>
+                    <div class="list-group-item">{% trans "Total ($)" %}<span>{% trans 'calculating ...' %}</span>
+                    </div>
+                </div>
+                <div class="totalcart">
+                    <span class="span1">
+                        <img src="{% static 'images/total.png' %}" alt="">
+                        <img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <br>
+                        <h4>{% trans "Total" %} </h4>
+                    </span>
+                    <span class="totalamount">
+                        <span class="span2">{% trans 'calculating ...' %}<span class="egpf">EGP</span>
+                        </span>
+                    </span>
+                </div>
+                {% endif %}
+                <div>
+                    <a href="{% url 'com' %}"><button type="button" class="cartbutton btn btn-primary">{% trans "Confirm &amp; Next" %}</button></a>
+                </div>
+            </div>
+            </div>
+
+                </div>
+            </div>
+
+    {% else %}
+    <div class="cartItems row" style="height:200px;width:100%;">
+        <div class="paddinginlg mx-auto text-danger">
+        <h2>{% trans 'The Cart is Empty' %}</h2>
+        </div>
+    </div>
+{% endif %}
+    </div>
+ </div>
+{% endblock %}

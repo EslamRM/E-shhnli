@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<body>
+<!----------- Start   section Loading----------
+<div class="loading-overlay">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube">
+	  </div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+	</div>--->
+	<!----- End   section Loading--------------->
+	<div class="landing-page">	
+		<!----------------------strat loading section-------------------------------->
+
+		<div class="desc">
+			<div class="overlay"></div>
+			<div class="desc-box">
+			<div class="container">
+				<h1 class="wow bodunceIn" data-wow-duration="2s" 
+				data-wow-offset="50">
+					{% trans "The World In Your House Easliy" %}
+				</h1>
+				<div class="custom-control custom-switch">
+					<input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+					<label for="toggle-on" class="lab">{% trans "Personal" %}</label>
+					<input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+					<label for="toggle-off" class="lab">{% trans "Commercial" %}</label>
+				</div>
+				{% block link %}
+				<div class="find-link wow fadeInRightBig"  >
+					<p>{% trans "Drop your product’s link here" %}</p>
+					<form class="form-inline " method="post" action="{% url 'api' %}">
+						{% csrf_token %}
+						<div class="form-group">
+							<input type="text" name="url" class="form-control" required placeholder="Paste your product link: https://www.amazon.com/432221">
+						  </div>
+						  <div class="form-group">
+							<button class="form-control get" id="get">{% trans "Get It" %}</button>
+						  </div>
+					  </form>
+					<!--<input class="fadeInRightBig" data-wow-duration="2s" 
+					data-wow-offset="60" type="text" placeholder="Paste your product link: https://www.amazon.com/432221">
+					<button >GET IT</button>-->
+				</div>
+				{% endblock %}
+				<div class="desc-commerical hide text-center">
+					<p>{% blocktrans %} Write Your Specific Commercial Order
+						Including What You Need Specially From Quantites Price Details about the Order {% endblocktrans %}</p>
+
+					<hr>
+					<div class="desc-commerical-form ">
+						<form action="{% url 'com' %}" class="form-inline" method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+							<p for="com_file" class="ml-4">{% trans "Upload Details File Or Image If Exist" %}</p>
+							<div class="form-group">
+								<input type="file" name="com_file" id="com_file" class="form-control d-block " >
+								<input type="text" class="form-control"  style="width:100%;" name="com_title" aria-describedby="emailHelp" placeholder="Title">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" id="exampleInputEmail1" name="com_quantity" aria-describedby="emailHelp" placeholder="Quantity">
+								<input type="Number" class="form-control" id="exampleInputPassword1" name="com_price" placeholder="Price">
+							</div>
+							<div class="form-group">
+								<textarea name="com_text" class="form-control d-block" id=""  style="height:100px; width:650px; margin-left: 30px; margin-bottom: 40px; border:#EC407A solid 2px;" placeholder="Enter Detailes"></textarea>
+							</div>
+							<input type="submit" value="Send" class="form-control mx-auto text-center">
+						</form>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--------------------------- How we Work---------------------------------------->
+		<div class="how-work">
+			<div class="container-fluid">
+				<h2 class="h1 wow fadeInDown" data-wow-duration="2s" 
+				data-wow-offset="300">
+					{% trans "How E-Shhnli Works" %}
+				</h2>
+				<div class="row">
+				<div class="box col-12 col-sm-6  col-md-6 col-lg-3  col-xl-3 wow fadeInDownBig"  data-wow-duration="2s" 
+				data-wow-offset="350">
+					<div class="icon"><i class="far fa-save"></i></div>
+					<h3>{% trans "Copy → Paste" %}</h3>
+					<p>{% trans "Shop through thousands of websites and brands & just drop your item’s link here." %}</p>
+				</div>
+				<div class="box col-12 col-sm-6 col-md-6 col-lg-3  col-xl-3 wow fadeInDownBig" data-wow-duration="2s" 
+				data-wow-offset="350">
+					<div class="icon"><i class="far fa-check-circle"></i></div>
+					<h3>{% trans "Confirm your order" %}</h3>
+					<p>{% trans "Enter your desired quantity, size, and color, then review and confirm to proceed." %}</p>
+				</div>
+				<div class="box col-12 col-sm-6  col-md-6 col-lg-3  col-xl-3 wow fadeInUpBig"  data-wow-duration="2s" 
+				data-wow-offset="350">
+					<div class="icon"><i class="fas fa-money-check-alt"></i></div>
+					<h3>{% trans "Pay" %}</h3>
+					<p>{% trans "Choose your preferred payment method from various payment methods we offer." %}
+					</p>
+				</div>
+				<div class="box col-12 col-sm-6 col- col-md-6 col-lg-3  col-xl-3  wow fadeInUpBig"  data-wow-duration="2s" 
+				data-wow-offset="350">
+					<div class="icon"><i class="fas fa-shuttle-van"></i></div>
+					<h3>{% trans "Receive" %}</h3>
+					<p>{% trans "Have your order safely delivered to your doorstep in a perfect condition." %}</p>
+				</div>
+			</div>
+		</div>
+		 </div>	
+		 <!------------easy shoppping section---------------------------------------------->
+		 <div class="easy-shop">
+			 <div class="container">
+				 <div class="row">
+					 <div class="shop-desc  col-12  col-sm-12 col-md-12 col-lg-5 col-xl-5">
+						<h2 class="wow fadeInLeftBig"  data-wow-duration="2s" 
+						data-wow-offset="400">{% trans "Now with E-Shhnli  the shopping online is faster" %}</h2>
+						<p class="wow fadeInLeftBig"  data-wow-duration="2s" 
+						data-wow-offset="400">{% trans "E-Shhnli e-Wallet helps you to shop easliy from any online store and order from USA to Egypt." %}</p>
+						<button class="wow fadeInLeftBig"  data-wow-duration="2s" 
+						data-wow-offset="400">{% trans "E-Shhnli E-Walle" %}</button>
+					 </div>
+					 <div class="shop-img col-12  col-sm-12 col-md-12 col-lg-7 col-xl-7 wow fadeInRightBig"  data-wow-duration="2s" 
+					 data-wow-offset="400">
+						 <img src="{% static 'images/web-shop.svg' %}" alt="">
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+		 		 <!----------------- client section------------------------------------->	
+		 <div class="our-client" id="client">
+			 <div class="container">
+				 <img src="{% static 'images/client.png' %}" alt="">
+			 </div>
+		 </div>
+		 <!---start section price table-->
+<section class="price-table text-center">
+	<div class="container">
+	  <h2 class="h1">{% trans 'Our Amazing Prices' %}</h2>
+	  <div class="row">
+		<div class="col-lg-4 col-sm-6 col-md-6 xs-12">
+		  <div class="price-box  box1 wow fadeInUp  animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>800<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+
+            <h2 class="text-info"> {% trans 'No limits' %}</h2>
+			  <form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="800" hidden>
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-sm-6  xs-12">
+		  <div class="price-box box2 wow fadeInUp  animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>800<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+            <h2 class="text-info">{% trans 'More discounts' %}</h2>
+			<form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="800" hidden>
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-sm-6 xs-12 ">
+		  <div class="price-box box3 wow fadeInDown animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>499<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+            <h2 class="text-info"> {% trans 'Platinum' %}</h2>
+			<form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="499" hidden>
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+  </section><!----------------- client section------------------------------------->
+		 <div class="our-client">
+			 <div class="container">
+				 <img src="{% static 'images/client.png' %}" alt="">
+			 </div>
+		 </div>
+		 <!------------- Subscribe section---------------------------------------->	
+
+
+</div>
+
+</body>
+{% endblock %}
+</html>

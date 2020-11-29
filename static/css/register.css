@@ -1,0 +1,46 @@
+/*----------------------- register section----------------------------------*/
+.register-section {
+    padding-top: 120px;
+    background-color:#c3edea;
+    min-height: 100vh;
+}
+.register-desc h2{
+    margin-bottom: 30px;
+    font-family: 'Chelsea Market', cursive;
+    color:#6a097d;
+}
+.register-desc img{
+    width:100%;
+    height:400px;
+}
+
+.register-form{
+    background-color: #fff;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+.register-form  h5{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.register-form  img{
+    width:60px;height: 60px;
+}
+.register-form input{
+    width:100%;
+    background-color:#c3edea;
+    height:35px;
+    border-radius: 10px;
+}
+.register-form button{
+    height: 40px;
+}
+.register-form button a, .register-form button a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.register-form h5.or{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="container-fluid">
+    <div class="cartItems row">
+     <div class="paddinginlg col-md-12">
+    <div class="row">
+        {% for order in orders %}
+    <div class="orderblock col-lg-9 col-md-9"><div class="iteminside row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+            <div class="imgdiv">
+                <img tabindex="0" src="https://images-na.ssl-images-amazon.com/images/I/81tdHkBsXPL._AC_SX425_.jpg" alt="Beam Electronics Universal Smartphone Car Air Vent Mount Holder Cradle Compatible With iPhone XS XS Max XR X 8 8+ 7 7+ SE 6s 6+ 6 5s 4 Samsung Galaxy S10 S9 S8 S7 S6 S5 S4 LG Nexus Nokia and More" class="img" style="cursor: zoom-in; max-width: 130px;">
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+            <div class="itemdiv ml-3">
+                <h2>{{ order.title }}</h2>
+                <a target="_blank" href="{{order.url}}">{{ order.url|slice:":80" }}</a>
+                <div class="itemData"><h5>Category <br>
+                    <span>{{ order.category }}</span> </h5>
+                    <h5>Color <br>
+                        <span>{{ order.color }}</span></h5>
+                    <h5>Size <br>
+                        <span>{{ order.size }}</span> </h5>
+                    <h5>Qty<br><span>{{ order.Qty }}</span></h5>
+                    <h5>Price<br><span>{{ order.price }}</span></h5>
+                </div></div>
+        </div>
+        <div class="itemStatus col-lg-3 col-md-3 col-sm-12 col-12">
+            <span class="">{{ order.statue }}</span>
+        </div>
+    </div>
+     </div>
+        {% endfor %}
+    <div class="no-padding col-lg-3 col-md-3">
+        <div style="position: sticky; top: 105px;">
+
+            <div class="breakdowndiv breakdowndivcheckout">
+                <div class="list-group">
+                    <form method="post" action="{% url 'payment' %}">
+                        {% csrf_token %}
+                    {% if calculate %}
+                    {% for cal in calculate %}
+                    <div class="list-group-item">{% trans "Total Online Price" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.OnlinePrice }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Customs" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{{ cal.Customs }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "VAT" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.VAT }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "E-Shhnli Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.EShhnliFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Int. Shipping" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.IntShipping }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Delivery Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.DeliveryFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Subtotal" %}<span>{{ cal.Subtotal }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Discount" %}<span>{{ cal.Subtotal }}</span></div>
+                    <div class="list-group-item"><span><input name="pay" value="{{ cal.Total }}" hidden></span>
+                    </div>
+                </div>
+
+                <div class="totalcart">
+                    <span class="span1">
+                        <img src="{% static 'images/total.png' %}" alt="">
+                        <img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <br>
+                        <h4>{% trans "Total" %} </h4>
+                    </span>
+                    <span class="totalamount">
+                        <span class="span2">{{ cal.Total }}<span class="egpf"> EGP</span>
+                        </span>
+                    </span>
+                </div>
+                {% endfor %}
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ </div>
+</div>
+{% endblock %}

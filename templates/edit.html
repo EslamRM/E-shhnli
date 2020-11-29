@@ -1,0 +1,62 @@
+<div class="container popup">
+    <div style="height: 324px; transition: height 250ms ease 0ms;">
+        <div class="react-reveal linkItemDataCont" style="animation-fill-mode: both; animation-duration: 875ms; animation-delay: 125ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-1;">
+
+                <form action="{% url 'add_cart' %}" name="form" method="post" enctype='multipart/form-data'>
+                            {% csrf_token %}
+                <div class="row">
+                <div class="no-padding imgco col-lg-2 col-md-2 col-sm-2 col-2">
+                    <div class="imgdiv">
+                        <img src="{{edit.img}}" alt="" >
+                        <input name="img" value="{{edit.img}}" hidden>
+                    </div>
+                </div>
+                <div class="no-padding col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="datadiv">
+                       <img src="/img/brands/amazon-logo.png" alt="" width="70.8px" >
+                         <input name="logo" value="{{edit.logo}}" hidden>
+                        <h2><input name="title" placeholder="Title" value="{{edit.title}}"></h2>
+                        <a target="_blank" href="{{edit.url}}" name="url">
+                             <input name="url" value="{{edit.url}}" hidden>
+                        {{ url|slice:":80" }} .....
+                        </a>
+                            <div class="form-row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Category" %}
+                                    </label>
+                                    <select class="form-control" name="category">
+                                        <option value="{{edit.category}}" >{% trans "Select category" %}</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Color" %}</label>
+                                    <input placeholder="Type color" value="{{ edit.color }}" type="text" class="form-control"  name="color">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Size" %}</label>
+                                    <input placeholder="Type size" value="{{ edit.size }}" type="text" class="form-control"  name="size">
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+                                    <label class="form-label">{% trans "Qty" %}</label>
+                                    <input inputmode="numeric" min="1" value="{{ edit.qty }}" type="number" class="form-control" name="qty">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="addcol col-lg-2 col-md-2 col-sm-2 col-2">
+                            <div class="form-row mt-5 text-danger">
+                                <div class="col">
+                                    <h5 class="form-label">{% trans "Price ($)" %}</h5>
+                                    <h6><input name="price" placeholder="Price" value="{{edit.price}}"></h6>
+                                </div>
+                            </div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            <img src="/img/path.png" alt="" class="mr-2">{% trans "Add" %}
+                        </button>
+                    </div>
+                </form>
+                </div>
+                <img src="{% static 'images/removefromcat.png' %}" class="removeim" alt="" style="cursor: pointer;">
+            </div>
+        </div>

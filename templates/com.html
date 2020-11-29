@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="container">
+    <div class="addcouponsec top"><h3>{% trans "Drop your product’s link here" %}</h3>
+        <form method="post" action="{% url 'api' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <input placeholder="Paste your product link: https://www.amazon.com/432221" type="text" class="form-control"  name="url">
+                <button type="submit" class="btn btn-primary get">{% trans "Get It" %}</button>
+            </div>
+        </form>
+    </div>
+{% if orders or commercial %}
+    <div class="cartItems row">
+
+        <div class="paddinginlg col-md-8">
+
+            <h1 class="text-secondary">{% trans "My items" %}<span> ({{count}} {% trans "Item/s" %})</span>
+                <a href="{% url 'clear_cart' %}">
+                <span class="clearcart">
+                    <img src="/img/clearcart.png" alt=""> {% trans "Clear cart" %}</span></a></h1>
+            <h5 class=" text-danger">{% trans 'Commercial Order' %}</h5>
+            <hr>
+        <div class="commercial" style="display:block;">
+        {% for com in commercial %}
+            <form method="post" action="{% url 'edit_itm_com' com.id %}">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <div class="react-reveal cartItemDataCont" style="animation-fill-mode: both;
+                         animation-duration: 1000ms;
+                          animation-delay: 0ms;
+                           animation-iteration-count: 1;opacity: 1;
+                            animation-name: react-reveal-61475453695474-3;
+                            padding:10px;
+                            overflow:hidden;">
+                            <div class="row">
+                                <div class="imgco col-lg-3 col-md-3 col-sm-2 col-12" style="overflow:hidden;">
+                                    <div class="imgdiv" style="height:auto;">
+                                        <h5>{% trans 'Details File' %}</h5>
+                                        {% if com.file %}
+                                        <div><a href="{{com.file.url}}" style="color:#ff9258;">{{com.file}}</a></div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-8 col-12" style="height:auto;">
+                                    <div class="datadiv" >
+                                        <h3><input value="{{com.title}}" name="title1"></h3>
+                                        <div class="itemData"><h5>
+                                            <div><h5>{% trans 'Quantity: ' %}<input value="{{com.quantity}} " name="qty1"></h5></div>
+                                            <div><h5>{% trans 'Details: ' %}<textarea name="details1">{{com.details }}</textarea></h5></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" addcol text-center col-lg-2 col-md-2 col-sm-2 col-12">
+                                    <h5 class="h3e"><input value="{{com.price}}" name="price1"></h5>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                               <button type="submit" class="edititem btn btn-outline-secondary" style="display:none;">{% trans 'Save' %}</button>
+                                <a href="{% url 'clear_item_com' com.id %}"><img src="{% static 'images/removefromcat.png' %}" class="removeim" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                        </form>
+{% endfor %}
+</div>
+            <h5 class=" text-danger">{% trans 'Personal Order' %}</h5>
+            <hr>
+            {% for order in orders %}
+            <form method="post" action="{% url 'edit_itm' order.id %}">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <div class="react-reveal cartItemDataCont" style="animation-fill-mode: both;
+                         animation-duration: 1000ms;
+                          animation-delay: 0ms;
+                           animation-iteration-count: 1;opacity: 1;
+                            animation-name: react-reveal-61475453695474-3;
+                            padding:10px;">
+                            <div class="row">
+                                <div class="imgco col-lg-3 col-md-3 col-sm-2 col-12">
+                                    <div class="imgdiv" style="height:auto;"><img tabindex="0" src="{{order.img_url}}"
+                                                             alt="{{order.title}}"
+                                                             class="img" style="cursor: zoom-in; max-width: 130px;"></div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-8 col-12">
+                                    <div class="datadiv">
+                                        <img src="/img/brands/amazon-logo.png" alt="" width="70.8px">
+                                        <h2><input value="{{order.title}}" name="title"></h2>
+                                        <div class="itemData"><h5>
+                                           <span>{% trans "Category:" %}</span> <input value="{{order.category}}" name="category"></h5>
+                                            <h5><span>{% trans "Color:" %}</span> <input value="{{order.color}}" name="color"></h5>
+                                            <h5><span>{% trans "Size:" %}</span> <input value="{{order.size}}" name="size"></h5>
+                                            <h5><span>{% trans 'Qty:' %}</span><input value="{{ order.Qty }}" name="qty"></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" addcol text-center col-lg-2 col-md-2 col-sm-2 col-12">
+                                    <h5 class="h3e">{{order.price}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                            <div>
+                                <button type="submit" class="edititem btn btn-outline-secondary" style="display:none;">{% trans 'Save' %}</button>
+                                <a href="{% url 'delete_itm' order.id %}"><img src="{% static 'images/removefromcat.png' %}" class="removeim" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                        </form>
+                {%  endfor %}
+            <h5 class="text-danger">Shipping address</h5>
+            <hr>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <div class="react-reveal cartItemDataCont" id="address" style="animation-fill-mode: both;
+                         animation-duration: 1000ms;
+                          animation-delay: 0ms;
+                           animation-iteration-count: 1;opacity: 1;
+                            animation-name: react-reveal-61475453695474-3;
+                            padding:10px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-8 col-12">
+                                    <div class="datadiv">
+                                        <div class="itemData ml-3">
+                                            {% for p in profile %}
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5><span>{% trans "Fullname:" %}</span></h5>
+                                                    <h5><span>{% trans "Address 1:" %}</span></h5>
+                                                    <h5><span>{% trans "Address 2:" %}</span></h5>
+                                                    <h5><span>{% trans "Phone Number:" %}</span></h5>
+                                                </div>
+                                                <div class="col">
+                                                    <h5><span>{{ p.full_name}}</span></h5>
+                                                    <h5> <span>{{ p.address_1}}</span></h5>
+                                                    <h5><span>{{ p.address_2}} </span></h5>
+                                                    <h5><span>{{ p.phone_number}}</span></h5>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+                            <div>
+                                <a href="#MyWallet" data-id="my_information" id="editbutton" class="editbutton"><img src="{% static 'images/editbutton.png' %}"   class="edititem" style="position: absolute;top: 20px;right: 40px;" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+                <div class="paddinginlg col-md-4">
+            <div class="breakdowndiv ">
+                <div class="list-group">
+                    <form method="post" action="{% url 'payment' %}">
+                        {% csrf_token %}
+                    {% if calculate %}
+                    {% for cal in calculate %}
+                    <div class="list-group-item">{% trans "Total Online Price" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.OnlinePrice }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Customs" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{{ cal.Customs }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "VAT" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.VAT }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "E-Shhnli Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.EShhnliFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Int. Shipping" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{{ cal.IntShipping }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Delivery Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{{ cal.DeliveryFees }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Subtotal" %}<span>{{ cal.Subtotal }}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Discount" %}<span>{{ cal.Subtotal }}</span></div>
+                    <div class="list-group-item"><span><input name="pay" value="{{ cal.Total }}" hidden></span>
+                    </div>
+                </div>
+
+                <div class="totalcart">
+                    <span class="span1">
+                        <img src="{% static 'images/total.png' %}" alt="">
+                        <img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <br>
+                        <h4>{% trans "Total" %} </h4>
+                    </span>
+                    <span class="totalamount">
+                        <span class="span2">{{ cal.Total }}<span class="egpf"> EGP</span>
+                        </span>
+                    </span>
+                </div>
+                {% endfor %}
+                <div class="list-group">
+                    {% else %}
+                    <div class="list-group-item">{% trans "Total Online Price" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Customs" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "VAT" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "E-Shhnli Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Int. Shipping" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt=""><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Delivery Fees" %}<img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="" aria-describedby="tooltip-top"><span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Subtotal" %}<span>{% trans 'calculating ...' %}</span>
+                    </div>
+                    <div class="list-group-item">{% trans "Discount" %}<span>{% trans 'calculating ...' %}</span></div>
+                    <div class="list-group-item">{% trans "Total ($)" %}<span>{% trans 'calculating ...' %}</span>
+                    </div>
+                </div>
+
+                <div class="totalcart">
+                    <span class="span1">
+                        <img src="{% static 'images/total.png' %}" alt="">
+                        <img src="{% static 'images/tooltipicon.png' %}" class="tooltipicon" alt="">
+                        <br>
+                        <h4>{% trans "Total" %} </h4>
+                    </span>
+                    <span class="totalamount">
+                        <span class="span2">{% trans 'calculating ...' %}<span class="egpf"></span>
+                        </span>
+                    </span>
+                </div>
+                {% endif %}
+                <div>
+                    <button type="submit" class="cartbutton btn btn-secondary">{% trans "Confirm &amp; Next" %}</button>
+                </div>
+              </form>
+            </div>
+            </div>
+
+                </div>
+            </div>
+
+    {% else %}
+    <div class="cartItems row" style="height:200px;width:100%;">
+        <div class="paddinginlg mx-auto text-danger">
+        <h2>{% trans 'The Cart is Empty' %}</h2>
+        </div>
+    </div>
+{% endif %}
+</div>
+{% endblock %}

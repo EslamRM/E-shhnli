@@ -1,0 +1,1329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-27 06:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\core\forms.py:7 .\core\models.py:35 .\core\models.py:51
+msgid "Title"
+msgstr "الإسم"
+
+#: .\core\forms.py:9 .\core\models.py:52
+msgid "Quantity"
+msgstr "الكمية"
+
+#: .\core\forms.py:11 .\core\models.py:36 .\core\models.py:53
+msgid "Price"
+msgstr "السعر"
+
+#: .\core\forms.py:13 .\core\models.py:54
+msgid "Details"
+msgstr "التفاصيل"
+
+#: .\core\forms.py:15
+#, fuzzy
+#| msgid "Fill in the Product Details"
+msgid "File Details"
+msgstr "املأ تفاصيل المنتج"
+
+#: .\core\forms.py:20 .\core\models.py:8 .\templates\profile.html:33
+#, fuzzy
+#| msgid "Fullname"
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#: .\core\forms.py:22 .\templates\profile.html:51
+#, fuzzy
+#| msgid "Phone number"
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: .\core\forms.py:24 .\core\models.py:10 .\templates\profile.html:45
+#, fuzzy
+#| msgid "Address"
+msgid "Address 1"
+msgstr "العنوان"
+
+#: .\core\forms.py:26 .\core\models.py:11 .\templates\profile.html:48
+#, fuzzy
+#| msgid "Address"
+msgid "Address 2"
+msgstr "العنوان٢"
+
+#: .\core\forms.py:29 .\core\models.py:12
+msgid "Country"
+msgstr "الدولة"
+
+#: .\core\forms.py:30 .\core\models.py:13
+#, fuzzy
+#| msgid "Statue"
+msgid "State"
+msgstr "الحالة"
+
+#: .\core\forms.py:32 .\core\models.py:14
+msgid "ZIP"
+msgstr "الرقم البريدي"
+
+#: .\core\models.py:7 .\core\models.py:33 .\core\models.py:50
+#: .\core\models.py:61 .\core\models.py:86
+msgid "User"
+msgstr "إسم المستخدم"
+
+#: .\core\models.py:9
+msgid "Phone number"
+msgstr "رقم الهاتف"
+
+#: .\core\models.py:34
+msgid "logo url"
+msgstr "الشعار"
+
+#: .\core\models.py:37
+msgid "Url"
+msgstr "Url عنوان"
+
+#: .\core\models.py:38
+msgid "Image Url"
+msgstr "الصورة"
+
+#: .\core\models.py:39 .\templates\cart.html:34 .\templates\cart.html:128
+#: .\templates\edit.html:25
+msgid "Category"
+msgstr "التصنيف"
+
+#: .\core\models.py:40 .\templates\cart.html:51 .\templates\cart.html:135
+#: .\templates\edit.html:32
+msgid "Color"
+msgstr "اللون"
+
+#: .\core\models.py:41
+msgid "size"
+msgstr "المقاس"
+
+#: .\core\models.py:42 .\templates\cart.html:59 .\templates\cart.html:143
+#: .\templates\cart.html:215 .\templates\edit.html:40
+#: .\templates\orders.html:52
+msgid "Qty"
+msgstr "الكمية: "
+
+#: .\core\models.py:43
+msgid "Statue"
+msgstr "الحالة"
+
+#: .\core\models.py:44
+msgid "Promo Code"
+msgstr "كوبون الخصم"
+
+#: .\core\models.py:55 .\templates\com.html:42
+#, fuzzy
+#| msgid "Or Upload Details File"
+msgid "Details File"
+msgstr "أو تحميل ملف التفاصيل"
+
+#: .\core\models.py:62
+#, fuzzy
+#| msgid "My Orders"
+msgid "Order"
+msgstr "طلباتي"
+
+#: .\core\models.py:63
+#, fuzzy
+#| msgid "Total Online Price"
+msgid "Online Price"
+msgstr "إجمالي السعر على الإنترنت"
+
+#: .\core\models.py:63 .\core\models.py:64 .\core\models.py:65
+#: .\core\models.py:66 .\core\models.py:67 .\core\models.py:68
+#: .\core\models.py:69 .\core\models.py:70 .\core\models.py:71
+msgid "Calculating"
+msgstr "جاري الحساب"
+
+#: .\core\models.py:64 .\templates\cart.html:242 .\templates\cart.html:281
+#: .\templates\com.html:171 .\templates\com.html:210 .\templates\order.html:48
+#: .\templates\orders.html:80 .\templates\orders.html:144
+msgid "Customs"
+msgstr "الجمارك"
+
+#: .\core\models.py:65 .\templates\cart.html:244 .\templates\cart.html:283
+#: .\templates\com.html:173 .\templates\com.html:212 .\templates\order.html:50
+#: .\templates\orders.html:82 .\templates\orders.html:146
+msgid "VAT"
+msgstr "ضريبة القيمة المضافة"
+
+#: .\core\models.py:66 .\templates\cart.html:247 .\templates\cart.html:286
+#: .\templates\com.html:176 .\templates\com.html:215 .\templates\order.html:53
+#: .\templates\orders.html:85 .\templates\orders.html:149
+msgid "E-Shhnli Fees"
+msgstr "E-Shunli رسوم"
+
+#: .\core\models.py:67
+#, fuzzy
+#| msgid "Shopping"
+msgid "Int-Shipping"
+msgstr "التسوق"
+
+#: .\core\models.py:68 .\templates\cart.html:253 .\templates\cart.html:291
+#: .\templates\com.html:182 .\templates\com.html:220 .\templates\order.html:59
+#: .\templates\orders.html:90 .\templates\orders.html:154
+msgid "Delivery Fees"
+msgstr "رسوم التوصيل"
+
+#: .\core\models.py:69 .\templates\cart.html:256 .\templates\cart.html:293
+#: .\templates\com.html:185 .\templates\com.html:222 .\templates\order.html:62
+#: .\templates\orders.html:92 .\templates\orders.html:156
+msgid "Subtotal"
+msgstr "المجموع الفرعي"
+
+#: .\core\models.py:70 .\templates\cart.html:258 .\templates\cart.html:295
+#: .\templates\com.html:187 .\templates\com.html:224 .\templates\order.html:64
+#: .\templates\orders.html:94 .\templates\orders.html:158
+msgid "Discount"
+msgstr "خصم"
+
+#: .\core\models.py:71 .\templates\cart.html:268 .\templates\cart.html:304
+#: .\templates\com.html:197 .\templates\com.html:234 .\templates\order.html:74
+#: .\templates\orders.html:131 .\templates\orders.html:195
+msgid "Total"
+msgstr "مجموع"
+
+#: .\core\models.py:87 .\templates\index.html:166 .\templates\index.html:190
+#: .\templates\index.html:214 .\templates\offer.html:76
+#: .\templates\offer.html:100 .\templates\offer.html:124
+msgid "Subscribe"
+msgstr "الإشتراك"
+
+#: .\project\settings.py:130
+msgid "Arabic"
+msgstr "عربي"
+
+#: .\project\settings.py:131
+msgid "English"
+msgstr "انجليزي"
+
+#: .\templates\base.html:7
+#, fuzzy
+#| msgid "The World In Your House Easliy"
+msgid "The World In Your House"
+msgstr "العالم في منزلك بسهولة"
+
+#: .\templates\base.html:41
+msgid "How It Works"
+msgstr "كيف نعمل"
+
+#: .\templates\base.html:42
+msgid "Offers"
+msgstr "العروض"
+
+#: .\templates\base.html:43 .\templates\base.html:174
+msgid "FAQ"
+msgstr "الاسئلة الشائعة"
+
+#: .\templates\base.html:44 .\templates\base.html:177
+msgid "Support"
+msgstr "الدعم"
+
+#: .\templates\base.html:51
+msgid "Hello,"
+msgstr "أهلاً"
+
+#: .\templates\base.html:54 .\templates\profile.html:97
+msgid "My Orders"
+msgstr "طلباتي"
+
+#: .\templates\base.html:55 .\templates\profile.html:8
+#: .\templates\profile.html:98
+msgid "My Wallet"
+msgstr "محفظتي"
+
+#: .\templates\base.html:56
+msgid "Log out"
+msgstr "تسجيل الخروج"
+
+#: .\templates\base.html:61 .\templates\registration\registration_form.html:25
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: .\templates\base.html:62
+msgid "Register"
+msgstr "إنشاء حساب"
+
+#: .\templates\base.html:64
+msgid "Cart"
+msgstr "العربة"
+
+#: .\templates\base.html:115
+msgid "We helps you to shop easliy from any online store and order ."
+msgstr "نحن نساعدك على التسوق بسهولة من أي متجر أو طلب عبر الإنترنت"
+
+#: .\templates\base.html:126
+msgid "Shopping"
+msgstr "التسوق"
+
+#: .\templates\base.html:130
+msgid "How Its Works"
+msgstr "كيف يعمل"
+
+#: .\templates\base.html:133
+msgid "Brands"
+msgstr "العلامات التجارية"
+
+#: .\templates\base.html:146
+msgid "Company"
+msgstr "شركة"
+
+#: .\templates\base.html:150
+msgid "About"
+msgstr "عن"
+
+#: .\templates\base.html:153
+msgid "Contact"
+msgstr "اتصل"
+
+#: .\templates\base.html:156
+msgid "Shanli’s Packages"
+msgstr " حزم إشتراك إشحنلي"
+
+#: .\templates\base.html:170
+msgid "Help"
+msgstr "المساعدة"
+
+#: .\templates\base.html:234
+msgid "Do you like our service?"
+msgstr "هل تعجبك خدمتنا"
+
+#: .\templates\cart.html:37 .\templates\cart.html:131 .\templates\edit.html:28
+msgid "Select category"
+msgstr "اختر تصنيف"
+
+#: .\templates\cart.html:38
+msgid "Clothes/Shoes/Bags/Wallets"
+msgstr "ملابس/احذية/حقائب"
+
+#: .\templates\cart.html:39
+msgid "Electronics"
+msgstr "إلكترونيات"
+
+#: .\templates\cart.html:40
+msgid "Electronics with Bluetooth"
+msgstr "Bluetooth إلكترونيات"
+
+#: .\templates\cart.html:41
+msgid "Laptops/Computers"
+msgstr "كمبيوتر / لاب توب"
+
+#: .\templates\cart.html:42
+msgid "Game Consoles"
+msgstr "أجهزة الألعاب"
+
+#: .\templates\cart.html:43
+msgid "Video Games"
+msgstr "العاب الكترونية"
+
+#: .\templates\cart.html:44
+msgid "Mobile Phone/Tablet"
+msgstr "الهاتف المحمول / الكمبيوتر اللوحي"
+
+#: .\templates\cart.html:45
+msgid "Mobile Accessory/Case/Screen Protector"
+msgstr "اكسسوار موبايل / حافظة / واقي شاشة"
+
+#: .\templates\cart.html:46 .\templates\offer.html:22
+msgid "Watches/Sunglasses/Eyeglasses"
+msgstr "ساعات / نظارات شمسية / نظارات"
+
+#: .\templates\cart.html:47
+msgid "Cosmetics"
+msgstr "مستحضرات التجميل"
+
+#: .\templates\cart.html:55 .\templates\cart.html:139 .\templates\edit.html:36
+msgid "Size"
+msgstr "مقاس"
+
+#: .\templates\cart.html:66 .\templates\orders.html:98
+#: .\templates\orders.html:162
+msgid "Add your promo code"
+msgstr "أضف كوبون الخصم الخاص بك"
+
+#: .\templates\cart.html:87 .\templates\cart.html:153 .\templates\edit.html:50
+msgid "Price ($)"
+msgstr "السعر"
+
+#: .\templates\cart.html:92 .\templates\cart.html:158 .\templates\edit.html:55
+msgid "Add"
+msgstr "أضف"
+
+#: .\templates\cart.html:169 .\templates\com.html:6 .\templates\index.html:36
+#: .\templates\orders.html:6
+msgid "Drop your product’s link here"
+msgstr "اترك رابط المنتج هنا"
+
+#: .\templates\cart.html:174 .\templates\com.html:11 .\templates\index.html:43
+#: .\templates\orders.html:11
+msgid "Get It"
+msgstr "احصل عليه"
+
+#: .\templates\cart.html:183 .\templates\com.html:20 .\templates\orders.html:20
+msgid "My items"
+msgstr "منتجاتي"
+
+#: .\templates\cart.html:183 .\templates\com.html:20 .\templates\orders.html:20
+msgid "Item/s"
+msgstr "منتج"
+
+#: .\templates\cart.html:186 .\templates\com.html:23 .\templates\orders.html:23
+msgid "Clear cart"
+msgstr "مسح العربة"
+
+#: .\templates\cart.html:205 .\templates\com.html:96 .\templates\orders.html:42
+msgid "Category:"
+msgstr "الفئة: "
+
+#: .\templates\cart.html:206 .\templates\com.html:97 .\templates\orders.html:43
+msgid "Color:"
+msgstr "اللون: "
+
+#: .\templates\cart.html:207 .\templates\com.html:98 .\templates\orders.html:44
+msgid "Size:"
+msgstr "مقاس: "
+
+#: .\templates\cart.html:226 .\templates\com.html:64 .\templates\com.html:109
+#: .\templates\profile.html:54 .\templates\profile.html:83
+msgid "Save"
+msgstr "احفظ"
+
+#: .\templates\cart.html:239 .\templates\cart.html:278 .\templates\com.html:168
+#: .\templates\com.html:207 .\templates\order.html:45
+#: .\templates\orders.html:77 .\templates\orders.html:141
+msgid "Total Online Price"
+msgstr "إجمالي السعر على الإنترنت"
+
+#: .\templates\cart.html:250 .\templates\cart.html:289 .\templates\com.html:179
+#: .\templates\com.html:218 .\templates\how-work.html:69
+#: .\templates\order.html:56 .\templates\orders.html:88
+#: .\templates\orders.html:152
+msgid "Int. Shipping"
+msgstr "الشحن"
+
+#: .\templates\cart.html:259 .\templates\cart.html:296 .\templates\com.html:225
+#: .\templates\orders.html:95 .\templates\orders.html:159
+msgid "Total ($)"
+msgstr "مجموع"
+
+#: .\templates\cart.html:279 .\templates\cart.html:281
+#: .\templates\cart.html:284 .\templates\cart.html:287
+#: .\templates\cart.html:289 .\templates\cart.html:291
+#: .\templates\cart.html:293 .\templates\cart.html:295
+#: .\templates\cart.html:296 .\templates\cart.html:307 .\templates\com.html:208
+#: .\templates\com.html:210 .\templates\com.html:213 .\templates\com.html:216
+#: .\templates\com.html:218 .\templates\com.html:220 .\templates\com.html:222
+#: .\templates\com.html:224 .\templates\com.html:225 .\templates\com.html:237
+#: .\templates\orders.html:83 .\templates\orders.html:86
+#: .\templates\orders.html:88 .\templates\orders.html:90
+#: .\templates\orders.html:92 .\templates\orders.html:94
+#: .\templates\orders.html:95 .\templates\orders.html:134
+#: .\templates\orders.html:147 .\templates\orders.html:150
+#: .\templates\orders.html:152 .\templates\orders.html:154
+#: .\templates\orders.html:156 .\templates\orders.html:158
+#: .\templates\orders.html:159 .\templates\orders.html:198
+msgid "calculating ..."
+msgstr "جاري الحساب"
+
+#: .\templates\cart.html:313 .\templates\com.html:243
+#: .\templates\orders.html:204
+msgid "Confirm &amp; Next"
+msgstr "تأكيد ، التالي"
+
+#: .\templates\cart.html:324 .\templates\com.html:255
+#: .\templates\orders.html:216
+msgid "The Cart is Empty"
+msgstr "العربة فارغة"
+
+#: .\templates\com.html:24
+#, fuzzy
+#| msgid "Commercial"
+msgid "Commercial Order"
+msgstr "طلب تجاري"
+
+#: .\templates\com.html:52
+msgid "Quantity: "
+msgstr " الكمية: "
+
+#: .\templates\com.html:53
+#, fuzzy
+#| msgid "Or Upload Details File"
+msgid "Details: "
+msgstr "التفاصيل"
+
+#: .\templates\com.html:72
+#, fuzzy
+#| msgid "Personal"
+msgid "Personal Order"
+msgstr "طلب شخصي"
+
+#: .\templates\com.html:99
+msgid "Qty:"
+msgstr " الكمية: "
+
+#: .\templates\com.html:135
+#, fuzzy
+#| msgid "Fullname"
+msgid "Fullname:"
+msgstr "الاسم الكامل"
+
+#: .\templates\com.html:136
+#, fuzzy
+#| msgid "Address"
+msgid "Address 1:"
+msgstr "العنوان"
+
+#: .\templates\com.html:137
+#, fuzzy
+#| msgid "Address"
+msgid "Address 2:"
+msgstr "العنوان٢"
+
+#: .\templates\com.html:138
+#, fuzzy
+#| msgid "Phone number"
+msgid "Phone Number:"
+msgstr "رقم الهاتف"
+
+#: .\templates\how-work.html:10
+#, fuzzy
+#| msgid "How E-Shhnli Works"
+msgid "How E-Shhnli Work"
+msgstr " E-Shhnli كيف يعمل"
+
+#: .\templates\how-work.html:12
+#, fuzzy
+#| msgid ""
+#| "E-shhnli is an Egyptian registered company that provides online shopping "
+#| "services."
+msgid ""
+"E-Shhnli is an Egyptian registered company that provides online shopping "
+"services."
+msgstr " هي شركة مصرية مسجلة توفر التسوق عبر الإنترنت E-shhnli "
+
+#: .\templates\how-work.html:14
+msgid "Each step guides you to the next"
+msgstr "كل خطوة ترشدك إلى الخطوة التالية"
+
+#: .\templates\how-work.html:22
+msgid "Do the Shopping"
+msgstr "تسوق"
+
+#: .\templates\how-work.html:25
+msgid ""
+"From the Homepage, click on the “Stores” tab above to find out US stores or "
+"go direct to your desired one. Click on the store you want to purchase your "
+"item from. Take your full tour to compare and pick up your item."
+msgstr ""
+"من الصفحة الرئيسية ، انقر فوق علامة التبويب 'المتاجر' أعلاه لمعرفة المتاجر "
+"الأمريكية أو الانتقال مباشرة إلى المتجر الذي تريده. انقر فوق المتجر الذي "
+"تريد شراء العنصر الخاص بك منه ، قم بجولتك الكاملة للمقارنة والتقاط العنصر "
+"الخاص بك."
+
+#: .\templates\how-work.html:40
+msgid "Put in Your Order"
+msgstr "ضع طلبك"
+
+#: .\templates\how-work.html:43
+msgid ""
+"After settling on the product you want, copy its link and return to Gebhaly "
+"page to paste the link in the blank box."
+msgstr ""
+"بعد الاستقرار على المنتج الذي تريده ، انسخ الرابط الخاص به وارجع إلى صفحة E-"
+"shhnli للصق الرابط في المربع الفارغ."
+
+#: .\templates\how-work.html:51
+msgid "Fill in the Product Details"
+msgstr "املأ تفاصيل المنتج"
+
+#: .\templates\how-work.html:54
+msgid ""
+"Once you paste the link, you will find the details of your product "
+"automatically written down. Just take a look to review and enter any missing/"
+"needed data, such as color, size, and quantity, and then click on “Add to "
+"Cart” button."
+msgstr ""
+"بمجرد لصق الرابط ، ستجد تفاصيل منتجك مكتوبة تلقائيًا. ما عليك سوى إلقاء نظرة "
+"لمراجعة وإدخال أي بيانات مطلوبة مفقودة ، مثل اللون والحجم والكمية ، ثم انقر "
+"فوق الزر إضافة إلى عربة التسوق."
+
+#: .\templates\how-work.html:72
+msgid ""
+"After clicking on the “Checkout” tab, you have to choose your International "
+"Shipping type (whether to calculate it in Cairo Office or we review the "
+"order and send you full quotation) and then click on “Proceed to Checkout” "
+"tab. Hence, you need to register to undergo the process."
+msgstr ""
+"بعد النقر فوق علامة التبويب 'Checkout' ، يجب عليك اختيار نوع الشحن الدولي "
+"الخاص بك (سواء لحسابه في مكتب القاهرة أو نقوم بمراجعة الطلب وإرسال عرض أسعار "
+"كامل إليك) ثم النقر فوق علامة التبويب 'متابعة عملية الشراء'. ومن ثم ، فأنت "
+"بحاجة إلى التسجيل للخضوع لهذه العملية."
+
+#: .\templates\how-work.html:81
+msgid "Choose Payment Method"
+msgstr "اختر وسيلة الدفع"
+
+#: .\templates\how-work.html:84
+#, fuzzy
+#| msgid ""
+#| "On the sidebar, have a final look at the total cost, including the total "
+#| "online price, customs, VAT, E-shhnli fees, and international and local "
+#| "shipping, and confirm the Coupon Code, if you entered, affected the "
+#| "process. Then choose your payment method and tick the “Terms and "
+#| "Conditions” and “International Shipping fees” to proceed to payment."
+msgid ""
+" On the sidebar, have a final look at the total cost, including the total "
+"online price, customs,\n"
+"                        VAT, E-Shhnli fees, and international and local "
+"shipping, and confirm the Coupon Code, if you entered,\n"
+"                        affected the process. Then choose your payment "
+"method and tick the “Terms and Conditions” and “International Shipping "
+"fees”\n"
+"                        to proceed to payment. "
+msgstr ""
+"في الشريط الجانبي ، ألق نظرة أخيرة على التكلفة الإجمالية ، بما في ذلك السعر "
+"الإجمالي عبر الإنترنت والجمارك وضريبة القيمة المضافة ورسوم E-shhnli والشحن "
+"الدولي والمحلي ، وتأكيد رمز القسيمة ، إذا أدخلت ، أثر على العملية ثم اختر "
+"طريقة الدفع وحدد 'الشروط والأحكام' و 'رسوم الشحن الدولي' لمتابعة الدفع."
+
+#: .\templates\how-work.html:102
+msgid "Receive Your Order"
+msgstr "تلقي طلبك"
+
+#: .\templates\how-work.html:105
+msgid ""
+"After your product reaches our office in USA, our shipping company will "
+"bring it to Cairo. The process of delivering will be undertaken between 7 "
+"and 14 working days since the product is delivered to our office in USA."
+msgstr ""
+"بعد وصول منتجك إلى مكتبنا في الولايات المتحدة الأمريكية ، ستقوم شركة الشحن "
+"الخاصة بنا بإحضاره إلى القاهرة. ستتم عملية التسليم بين 7 و 14 يوم عمل منذ "
+"تسليم المنتج إلى مكتبنا في الولايات المتحدة الأمريكية."
+
+#: .\templates\index.html:26
+msgid "The World In Your House Easliy"
+msgstr "العالم في منزلك بسهولة"
+
+#: .\templates\index.html:30
+msgid "Personal"
+msgstr "طلب شخصي"
+
+#: .\templates\index.html:32
+msgid "Commercial"
+msgstr "طلب تجاري"
+
+#: .\templates\index.html:52
+msgid ""
+" Write Your Specific Commercial Order\n"
+"\t\t\t\t\t\tIncluding What You Need Specially From Quantites Price Details "
+"about the Order "
+msgstr ""
+
+#: .\templates\index.html:59
+#, fuzzy
+#| msgid "Or Upload Details File"
+msgid "Upload Details File Or Image If Exist"
+msgstr "حمل ملف التفاصيل أو الصورة إن وجد"
+
+#: .\templates\index.html:84
+msgid "How E-Shhnli Works"
+msgstr "E-Shhnli كيف يعمل"
+
+#: .\templates\index.html:90
+msgid "Copy → Paste"
+msgstr "نسخ → لصق"
+
+#: .\templates\index.html:91
+msgid ""
+"Shop through thousands of websites and brands & just drop your item’s link "
+"here."
+msgstr ""
+"تسوق عبر الآلاف من مواقع الويب والعلامات التجارية فقط أفلت رابط العنصر هنا."
+
+#: .\templates\index.html:96
+msgid "Confirm your order"
+msgstr "قم بتأكيد طلبك"
+
+#: .\templates\index.html:97
+msgid ""
+"Enter your desired quantity, size, and color, then review and confirm to "
+"proceed."
+msgstr ""
+"أدخل الكمية والحجم واللون الذي تريده ، ثم قم بالمراجعة والتأكيد للمتابعة"
+
+#: .\templates\index.html:102
+msgid "Pay"
+msgstr "إدفع"
+
+#: .\templates\index.html:103
+msgid ""
+"Choose your preferred payment method from various payment methods we offer."
+msgstr "اختر طريقة الدفع المفضلة لديك من بين طرق الدفع المختلفة التي نقدمها "
+
+#: .\templates\index.html:109
+msgid "Receive"
+msgstr "تسلم"
+
+#: .\templates\index.html:110
+msgid ""
+"Have your order safely delivered to your doorstep in a perfect condition."
+msgstr "احصل على طلبك بأمان حتى عتبة داركم في حالة ممتازة."
+
+#: .\templates\index.html:121
+msgid "Now with E-Shhnli  the shopping online is faster"
+msgstr "الآن مع إشحنلي أصبح التسوق عبر الإنترنت أسرع"
+
+#: .\templates\index.html:123
+msgid ""
+"E-Shhnli e-Wallet helps you to shop easliy from any online store and order "
+"from USA to Egypt."
+msgstr ""
+"تساعدك المحفظة الإلكترونية على التسوق بسهولة من أي متجر إلكتروني وطلب من "
+"الولايات المتحدة الأمريكية إلى مصر."
+
+#: .\templates\index.html:125
+msgid "E-Shhnli E-Walle"
+msgstr "المحفظة الإلكترونية"
+
+#: .\templates\index.html:143 .\templates\offer.html:53
+msgid "Our Amazing Prices"
+msgstr "أسعارنا المذهلة"
+
+#: .\templates\index.html:150 .\templates\index.html:175
+#: .\templates\index.html:199 .\templates\offer.html:60
+#: .\templates\offer.html:85 .\templates\offer.html:109
+msgid "per month"
+msgstr "كل شهر"
+
+#: .\templates\index.html:153 .\templates\offer.html:63
+#: .\templates\orders.html:121 .\templates\orders.html:185
+msgid "No limits"
+msgstr "لا حدود"
+
+#: .\templates\index.html:159 .\templates\index.html:183
+#: .\templates\index.html:207 .\templates\offer.html:69
+#: .\templates\offer.html:93 .\templates\offer.html:117
+#, fuzzy, python-format
+#| msgid "100% OFF Customs"
+msgid "100%% OFF Customs"
+msgstr " ١٠٠٪ خصم من الجمارك"
+
+#: .\templates\index.html:160 .\templates\index.html:184
+#: .\templates\index.html:208 .\templates\offer.html:70
+#: .\templates\offer.html:94 .\templates\offer.html:118
+#, fuzzy, python-format
+#| msgid "(100%) OFF VAT"
+msgid "100%% OFF VAT"
+msgstr "١٠٠٪ خصم على ضريبة القيمة المضافة"
+
+#: .\templates\index.html:161 .\templates\index.html:185
+#: .\templates\index.html:209 .\templates\offer.html:71
+#: .\templates\offer.html:95 .\templates\offer.html:119
+#, fuzzy, python-format
+#| msgid "$1 + (9%) E-shhnli Fees"
+msgid "$1 + 9%% E-shhnli Fees"
+msgstr " E-shhnli ١$ + ٩٪ على رسوم"
+
+#: .\templates\index.html:162 .\templates\index.html:186
+#: .\templates\index.html:210 .\templates\offer.html:72
+#: .\templates\offer.html:96 .\templates\offer.html:120
+msgid "$3.4 per 100 gm"
+msgstr " ٣.٤ دولارات لكل 100 جرام"
+
+#: .\templates\index.html:163 .\templates\index.html:187
+#: .\templates\index.html:211 .\templates\offer.html:73
+#: .\templates\offer.html:97 .\templates\offer.html:121
+msgid "Purchase limit: 50 K EGP/Mont"
+msgstr "٣.٤ دولارات لكل 100 جرام"
+
+#: .\templates\index.html:177 .\templates\offer.html:87
+#: .\templates\orders.html:122 .\templates\orders.html:186
+msgid "More discounts"
+msgstr "المزيد من الخصومات"
+
+#: .\templates\index.html:201 .\templates\offer.html:111
+#: .\templates\orders.html:123 .\templates\orders.html:187
+msgid "Platinum"
+msgstr "بلاتينوم"
+
+#: .\templates\offer.html:14
+#, fuzzy
+#| msgid "Offers"
+msgid "Offer  1"
+msgstr "العروض"
+
+#: .\templates\offer.html:16
+#, fuzzy, python-format
+#| msgid "100% OFF Customs"
+msgid "70%% OFF Customs,"
+msgstr "٧٠٪ خصم من الجمارك"
+
+#: .\templates\offer.html:17
+#, fuzzy, python-format
+#| msgid "(100%) OFF VAT"
+msgid "70%% OFF VAT,"
+msgstr " ١٠٠٪ خصم على ضريبة القيمة المضافة"
+
+#: .\templates\offer.html:21
+#, fuzzy
+#| msgid "Clothes/Shoes/Bags/Wallets"
+msgid "Clothes/Shoes/Bags/Wallets/"
+msgstr "ملابس/احذية/حقائب"
+
+#: .\templates\offer.html:40
+msgid "Coupon Code"
+msgstr "كوبون الخصم"
+
+#: .\templates\offer.html:42
+msgid "Copy Code"
+msgstr "إنسخ الكود"
+
+#: .\templates\orders.html:101 .\templates\orders.html:165
+msgid "Apply"
+msgstr "تطبيق"
+
+#: .\templates\orders.html:118 .\templates\orders.html:182
+msgid "Try E-Shhnli Packages"
+msgstr "E-shhnli جرب باقات"
+
+#: .\templates\orders.html:120 .\templates\orders.html:184
+msgid "Normal"
+msgstr "عادي"
+
+#: .\templates\profile.html:13
+msgid "Withdraw"
+msgstr "سحب"
+
+#: .\templates\profile.html:14
+msgid "Deposit"
+msgstr "إيداع"
+
+#: .\templates\profile.html:23 .\templates\profile.html:99
+msgid "My Information"
+msgstr "معلوماتي"
+
+#: .\templates\profile.html:39
+#, fuzzy
+#| msgid "Address"
+msgid "Email Address"
+msgstr "العنوان"
+
+#: .\templates\profile.html:67
+#, fuzzy
+#| msgid "Set password"
+msgid "My Password"
+msgstr "ضبط كلمة السر"
+
+#: .\templates\profile.html:74
+#, fuzzy
+#| msgid "Set password"
+msgid "Old Password"
+msgstr "ضبط كلمة السر"
+
+#: .\templates\profile.html:77
+#, fuzzy
+#| msgid "Set password"
+msgid "New Password"
+msgstr "ضبط كلمة السر"
+
+#: .\templates\profile.html:80
+#, fuzzy
+#| msgid "Confirm password reset"
+msgid "Confirm new password."
+msgstr "تأكيد إعادة تعيين كلمة المرور"
+
+#: .\templates\profile.html:100
+#, fuzzy
+#| msgid "Password reset"
+msgid "Password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\templates\profile.html:101
+#, fuzzy
+#| msgid "Subscribe"
+msgid "Subscriptions"
+msgstr "الإشتراك"
+
+#: .\templates\registration\activate.html:4
+msgid "Activation Failure"
+msgstr "فشل التنشيط"
+
+#: .\templates\registration\activate.html:7
+msgid "Account activation failed."
+msgstr "فشل تفعيل الحساب."
+
+#: .\templates\registration\activation_complete.html:4
+#: .\templates\registration\activation_complete_admin_pending.html:4
+msgid "Account Activated"
+msgstr "تم تفعيل الحساب"
+
+#: .\templates\registration\activation_complete.html:8
+#: .\templates\registration\activation_complete_admin_pending.html:8
+msgid "Your account is now activated."
+msgstr "حسابك الآن مفعل"
+
+#: .\templates\registration\activation_complete.html:10
+msgid "You can log in."
+msgstr "يمكنك تسجيل الدخول."
+
+#: .\templates\registration\activation_complete_admin_pending.html:10
+msgid "Once a site administrator activates your account you can login."
+msgstr "بمجرد أن يقوم مسؤول الموقع بتنشيط حسابك ، يمكنك تسجيل الدخول."
+
+#: .\templates\registration\activation_email.html:6
+#: .\templates\registration\admin_approve_email.html:6
+msgid "registration"
+msgstr "التسجيل"
+
+#: .\templates\registration\activation_email.html:11
+#, fuzzy, python-format
+#| msgid ""
+#| "    You (or someone pretending to be you) have asked to register an "
+#| "account at    (site_name)s.  If this wasn't you, please ignore this "
+#| "email    and your address will be removed from our records.    "
+msgid ""
+"\n"
+"    You (or someone pretending to be you) have asked to register an account "
+"at\n"
+"    %(site_name)s.  If this wasn't you, please ignore this email\n"
+"    and your address will be removed from our records.\n"
+"    "
+msgstr ""
+"لقد طلبت (أو أي شخص يتظاهر بأنه أنت) تسجيل حساب على (site_name) s إذا لم تكن "
+"أنت ، يرجى تجاهل هذا البريد الإلكتروني وسيتم حذف عنوانك من سجلاتنا."
+
+#: .\templates\registration\activation_email.html:18
+#, fuzzy, python-format
+#| msgid ""
+#| "    To activate this account, please click the following link within the "
+#| "next    (expiration_days)s days:    "
+msgid ""
+"\n"
+"    To activate this account, please click the following link within the "
+"next\n"
+"    %(expiration_days)s days:\n"
+"    "
+msgstr ""
+"\n"
+"\n"
+"لتنشيط هذا الحساب ، يرجى النقر فوق الارتباط التالي في غضون "
+"(expiration_days) \n"
+"الأيام التالية%"
+
+#: .\templates\registration\activation_email.html:30
+#: .\templates\registration\admin_approve_email.html:23
+#, fuzzy, python-format
+#| msgid "    Sincerely,    (site_name)s Management    "
+msgid ""
+"\n"
+"    Sincerely,\n"
+"    %(site_name)s Management\n"
+"    "
+msgstr ""
+"\n"
+"\n"
+"مع خالص التقدير ، إدارة (اسم_الموقع)%"
+
+#: .\templates\registration\activation_email.txt:2
+#, fuzzy, python-format
+#| msgid ""
+#| "You (or someone pretending to be you) have asked to register an account "
+#| "at(site_name)s.  If this wasn't you, please ignore this emailand your "
+#| "address will be removed from our records."
+msgid ""
+"\n"
+"You (or someone pretending to be you) have asked to register an account at\n"
+"%(site_name)s.  If this wasn't you, please ignore this email\n"
+"and your address will be removed from our records.\n"
+msgstr ""
+"لقد طلبت (أو أي شخص يتظاهر بأنه أنت) تسجيل حساب على (site_name) s. إذا لم "
+"تكن أنت ، فيرجى تجاهل هذا البريد الإلكتروني وستتم إزالة عنوانك من سجلاتنا"
+
+#: .\templates\registration\activation_email.txt:7
+#, fuzzy, python-format
+#| msgid ""
+#| "To activate this account, please click the following link within the "
+#| "next(expiration_days)s days:"
+msgid ""
+"\n"
+"To activate this account, please click the following link within the next\n"
+"%(expiration_days)s days:\n"
+msgstr ""
+"لتنشيط هذا الحساب ، يرجى النقر فوق الارتباط التالي في غضون (expiration_days) "
+"الأيام التالية"
+
+#: .\templates\registration\activation_email.txt:14
+#, fuzzy, python-format
+#| msgid "Sincerely,(site_name)s Management"
+msgid ""
+"\n"
+"Sincerely,\n"
+"%(site_name)s Management\n"
+msgstr "مع خالص التقدير ، إدارة (اسم_الموقع)"
+
+#: .\templates\registration\activation_email_subject.txt:1
+#: .\templates\registration\admin_approve_complete_email_subject.txt:1
+msgid "Account activation on"
+msgstr "تفعيل الحساب قيد التشغيل"
+
+#: .\templates\registration\admin_approve.html:4
+msgid "Approval Failure"
+msgstr "فشل الموافقة"
+
+#: .\templates\registration\admin_approve.html:7
+msgid "Account Approval failed."
+msgstr "فشلت الموافقة على الحساب"
+
+#: .\templates\registration\admin_approve_complete.html:4
+msgid "Account Approved"
+msgstr "تمت الموافقة على الحساب"
+
+#: .\templates\registration\admin_approve_complete.html:8
+msgid "The user's account is now approved."
+msgstr "تمت الموافقة على حساب المستخدم الآن."
+
+#: .\templates\registration\admin_approve_complete_email.html:6
+msgid "admin approval"
+msgstr "موافقة المشرف"
+
+#: .\templates\registration\admin_approve_complete_email.html:11
+#, fuzzy
+#| msgid "    Your account is now approved. You can     "
+msgid ""
+"\n"
+"    Your account is now approved. You can \n"
+"    "
+msgstr "تمت الموافقة على حسابك الآن. يمكنك"
+
+#: .\templates\registration\admin_approve_complete_email.html:14
+msgid "log in."
+msgstr "تسجيل الدخول"
+
+#: .\templates\registration\admin_approve_complete_email.txt:2
+#, fuzzy
+#| msgid ""
+#| "Your account is now approved. You can log in using the following link"
+msgid ""
+"\n"
+"Your account is now approved. You can log in using the following link\n"
+msgstr "تمت الموافقة على حسابك الآن. يمكنك تسجيل الدخول باستخدام الرابط التالي"
+
+#: .\templates\registration\admin_approve_email.html:11
+#, fuzzy, python-format
+#| msgid ""
+#| "    The following user ((user)s) has asked to register an account at    "
+#| "(site_name)s.    "
+msgid ""
+"\n"
+"    The following user (%(user)s) has asked to register an account at\n"
+"    %(site_name)s.\n"
+"    "
+msgstr "طلب المستخدم ((المستخدمين) التاليين تسجيل حساب على (اسم_الموقع)"
+
+#: .\templates\registration\admin_approve_email.html:17
+#, fuzzy
+#| msgid "    To approve this, please    "
+msgid ""
+"\n"
+"    To approve this, please\n"
+"    "
+msgstr "للموافقة على هذا ، من فضلك"
+
+#: .\templates\registration\admin_approve_email.html:20
+msgid "click here"
+msgstr "انقر هنا"
+
+#: .\templates\registration\admin_approve_email.txt:2
+#, fuzzy, python-format
+#| msgid ""
+#| "The following user ((user)s) has asked to register an account "
+#| "at(site_name)s."
+msgid ""
+"\n"
+"The following user (%(user)s) has asked to register an account at\n"
+"%(site_name)s.\n"
+msgstr "طلب المستخدم ((المستخدمين) التاليين تسجيل حساب على (اسم_الموقع)."
+
+#: .\templates\registration\admin_approve_email.txt:6
+#, fuzzy
+#| msgid "To approve this, please click the following link."
+msgid ""
+"\n"
+"To approve this, please click the following link.\n"
+msgstr "للموافقة على هذا ، الرجاء الضغط على الرابط التالي."
+
+#: .\templates\registration\admin_approve_email_subject.txt:1
+msgid "Account approval on"
+msgstr "الموافقة على الحساب في"
+
+#: .\templates\registration\login.html:4 .\templates\registration\login.html:22
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+#: .\templates\registration\login.html:14
+#: .\templates\registration\logout.html:14
+#: .\templates\registration\password_change_done.html:14
+#: .\templates\registration\password_change_form.html:13
+#: .\templates\registration\password_reset_complete.html:15
+#: .\templates\registration\password_reset_confirm.html:19
+#: .\templates\registration\password_reset_done.html:15
+#: .\templates\registration\password_reset_form.html:13
+#: .\templates\registration\registration_complete.html:15
+#: .\templates\registration\registration_form.html:15
+#, fuzzy
+#| msgid "Wellcome To E-Shahnli"
+msgid "Wellcome To Shahnli"
+msgstr "E-shhnli مرحبا بكم في"
+
+#: .\templates\registration\login.html:25
+msgid "Forgot your password?"
+msgstr "نسيت رقمك السري؟"
+
+#: .\templates\registration\login.html:25
+msgid "Reset it"
+msgstr "إعادة تعيينها"
+
+#: .\templates\registration\login.html:26
+msgid "Not a member?"
+msgstr "ليس عضوا"
+
+#: .\templates\registration\login.html:26
+#: .\templates\registration\registration_form.html:23
+msgid "Create Account"
+msgstr "إنشاء حساب"
+
+#: .\templates\registration\logout.html:4
+msgid "logout"
+msgstr "تسجيل خروج"
+
+#: .\templates\registration\logout.html:18
+msgid "Successfully logged out"
+msgstr "تم تسجيل الخروج بنجاح"
+
+#: .\templates\registration\password_change_done.html:4
+msgid "Password changed"
+msgstr "تم تغيير كلمة السر"
+
+#: .\templates\registration\password_change_done.html:18
+msgid "Password successfully changed!"
+msgstr "الرقم السري تغير بنجاح!"
+
+#: .\templates\registration\password_change_form.html:4
+#: .\templates\registration\password_change_form.html:21
+msgid "Change password"
+msgstr "تغيير كلمة المرور"
+
+#: .\templates\registration\password_reset_complete.html:4
+msgid "Password reset complete"
+msgstr "اكتملت إعادة تعيين كلمة المرور"
+
+#: .\templates\registration\password_reset_complete.html:20
+msgid "Your password has been reset!"
+msgstr "تم إعادة تعيين كلمة المرور الخاصة بك!"
+
+#: .\templates\registration\password_reset_complete.html:21
+#, python-format
+msgid ""
+"You may now <a class=\"btn btn-danger  mt-4\" href=\"%(login_url)s\">log in</"
+"a>"
+msgstr ""
+"تسجيل الدخول <a class=\"btn btn-danger  mt-4\" href=\"%(login_url)s\"> "
+"تستطيع الان"
+
+#: .\templates\registration\password_reset_confirm.html:11
+msgid "Confirm password reset"
+msgstr "تأكيد إعادة تعيين كلمة المرور"
+
+#: .\templates\registration\password_reset_confirm.html:24
+msgid "Enter your new password below to reset your password:"
+msgstr "أدخل كلمة المرور الجديدة أدناه لإعادة تعيين كلمة المرور الخاصة بك:"
+
+#: .\templates\registration\password_reset_confirm.html:29
+msgid "Set password"
+msgstr "ضبط كلمة السر"
+
+#: .\templates\registration\password_reset_confirm.html:32
+msgid "Password reset unsuccessful. Please"
+msgstr "إعادة تعيين كلمة المرور غير ناجحة. رجاء"
+
+#: .\templates\registration\password_reset_confirm.html:32
+msgid "try again."
+msgstr "حاول ثانية"
+
+#: .\templates\registration\password_reset_done.html:4
+msgid "Password reset"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\templates\registration\password_reset_done.html:20
+#, fuzzy
+#| msgid ""
+#| "                                We have sent you an email with a link to "
+#| "reset your password. Please check                                your "
+#| "email and click the link to continue.                            "
+msgid ""
+"\n"
+"                                We have sent you an email with a link to "
+"reset your password. Please check\n"
+"                                your email and click the link to continue.\n"
+"                            "
+msgstr ""
+"لقد أرسلنا إليك بريدًا إلكترونيًا يحتوي على رابط لإعادة تعيين كلمة المرور "
+"الخاصة بك. يرجى التحقق من بريدك الإلكتروني والنقر على الرابط للمتابعة."
+
+#: .\templates\registration\password_reset_email.html:3
+msgid "Greetings"
+msgstr "تحية طيبة"
+
+#: .\templates\registration\password_reset_email.html:5
+#, fuzzy, python-format
+#| msgid ""
+#| "You are receiving this email because you (or someone pretending to be "
+#| "you)requested that your password be reset on the (domain)s site. If you "
+#| "do notwish to reset your password, please ignore this message."
+msgid ""
+"\n"
+"You are receiving this email because you (or someone pretending to be you)\n"
+"requested that your password be reset on the %(domain)s site. If you do not\n"
+"wish to reset your password, please ignore this message.\n"
+msgstr ""
+"لقد تلقيت هذا البريد الإلكتروني لأنك (أو أي شخص يتظاهر بأنه أنت طلبت إعادة "
+"تعيين كلمة المرور الخاصة بك على موقع (domain). إذا كنت لا ترغب في إعادة "
+"تعيين كلمة المرور الخاصة بك ، يرجى تجاهل هذه الرسالة."
+
+#: .\templates\registration\password_reset_email.html:11
+#, fuzzy
+#| msgid ""
+#| "To reset your password, please click the following link, or copy and "
+#| "paste it into your web browser:"
+msgid ""
+"\n"
+"To reset your password, please click the following link, or copy and paste "
+"it\n"
+"into your web browser:\n"
+msgstr ""
+"لإعادة تعيين كلمة المرور الخاصة بك ، يرجى النقر فوق الرابط التالي ، أو نسخها "
+"ولصقها في متصفح الويب الخاص بك"
+
+#: .\templates\registration\password_reset_email.html:20
+msgid "Your username, in case you've forgotten:"
+msgstr "اسم المستخدم الخاص بك في حال نسيته"
+
+#: .\templates\registration\password_reset_email.html:23
+msgid "Best regards"
+msgstr "اطيب التمنيات"
+
+#: .\templates\registration\password_reset_email.html:24
+msgid "Management"
+msgstr "إدارة"
+
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\password_reset_form.html:26
+msgid "Reset password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\templates\registration\password_reset_form.html:18
+#, fuzzy
+#| msgid ""
+#| "                        Forgot your password? Enter your email in the "
+#| "form below and we'll send you instructions for creating a new "
+#| "one.                        "
+msgid ""
+"\n"
+"                        Forgot your password? Enter your email in the form "
+"below and we'll send you instructions for creating a new one.\n"
+"                        "
+msgstr ""
+"نسيت رقمك السري؟ أدخل بريدك الإلكتروني في النموذج أدناه وسنرسل لك تعليمات "
+"لإنشاء بريد إلكتروني جديد."
+
+#: .\templates\registration\registration_closed.html:4
+msgid "Registration is closed"
+msgstr "التسجيل مغلق"
+
+#: .\templates\registration\registration_closed.html:7
+msgid "Sorry, but registration is closed at this moment. Come back later."
+msgstr "عذرا ، ولكن التسجيل مغلق في هذه اللحظة. عد لاحقا."
+
+#: .\templates\registration\registration_complete.html:4
+msgid "Activation email sent"
+msgstr "لقد تم إرسال التفعيل"
+
+#: .\templates\registration\registration_complete.html:19
+msgid "Please check your email to complete the registration process."
+msgstr "تم إرسال بريد التفعيل"
+
+#: .\templates\registration\registration_form.html:4
+msgid "Register for an account"
+msgstr "سجل للحصول على حساب"
+
+#: .\templates\registration\resend_activation_complete.html:4
+msgid "Account Activation Resent"
+msgstr "إعادة تنشيط الحساب"
+
+#: .\templates\registration\resend_activation_complete.html:8
+#, fuzzy, python-format
+#| msgid "  We have sent an email to (email)s with further instructions.  "
+msgid ""
+"\n"
+"  We have sent an email to %(email)s with further instructions.\n"
+"  "
+msgstr ""
+"لقد أرسلنا بريدًا إلكترونيًا إلى (بريد إلكتروني) يحتوي على مزيد من الإرشادات"
+
+#: .\templates\registration\resend_activation_form.html:4
+msgid "Resend Activation Email"
+msgstr "أعد إرسال بريد التفعيل"
+
+#: .\templates\registration\resend_activation_form.html:10
+msgid "Submit"
+msgstr "إرسال"
+
+#: .\templates\support.html:10
+msgid "Support Section"
+msgstr "قسم الدعم"
+
+#: .\templates\support.html:11
+#, fuzzy
+#| msgid ""
+#| "E-shhnli is an Egyptian registered company that provides online shopping "
+#| "services."
+msgid ""
+"E-shhnli is an Egyptian registered company that provides online shopping "
+"services."
+msgstr " إشحنلي هي شركة مصرية مسجلة توفر التسوق عبر الإنترنت"
+
+#: .\templates\support.html:12
+msgid "Please enter your information below and we will respond."
+msgstr "الرجاء إدخال المعلومات الخاصة بك أدناه وسنقوم بالرد."
+
+#, fuzzy
+#~| msgid ""
+#~| "E-Shanli is an Egyptian registered company that provides online shopping "
+#~| "services."
+#~ msgid ""
+#~ "Shanli is an Egyptian registered company that provides online shopping "
+#~ "services."
+#~ msgstr "إشحنلي هي شركة مصرية مسجلة توفر التسوق عبر الإنترنت"
+
+#~ msgid "Support Tickets"
+#~ msgstr "تذاكر الدعم"
+
+#~ msgid "How E-Shanli Work"
+#~ msgstr "E-Shanli كيف يعمل"

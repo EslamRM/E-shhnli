@@ -1,0 +1,94 @@
+# #########################
+# # for 6pm
+# URL = 'https://www.6pm.com/p/champion-campus-tank-dress-black-white/product/9321941/color/151?zlfid=192&ref=pd_detail_1_t_sims_cv'
+#
+# page = requests.get(URL,headers=headers)
+# soup = BeautifulSoup(page.content,features='lxml')
+
+# title = soup.find(class_='ru').text
+# price = soup.find(class_='vq').text
+# img = soup.find(class_='ys')
+# print(title)
+# print(price)
+# print(img['src'])
+#########################
+# for Carter's
+
+# URL = 'https://www.carters.com/carters-kid-girl-dresses/V_3I875510.html'
+#
+# page = requests.get(URL,headers=headers)
+# soup = BeautifulSoup(page.content,features='lxml')
+#
+# title = soup.find(class_='product-title').text.strip()
+# price = soup.find(class_='value').text.strip()
+# img = soup.find(class_='js-product-main-image-0')['data-yo-src']
+# print(title)
+# print(price)
+# print(img['data-yo-src'])
+#########################
+# for gap
+
+# URL = 'https://www.gap.com/browse/product.do?pid=266318002&cid=1150406&pcid=6998&vid=1&grid=pds_5_227_1#pdp-page-content'
+
+
+# page = requests.get(URL, headers=headers)
+# soup = BeautifulSoup(page.content, features='lxml')
+#
+# title = soup.find(class_="product-title__text").get_text(strip=True)
+# price = soup.find(class_="pdp-pricing__selected pdp-pricing--highlight").text
+# img = soup.find(class_="hover-zoom")['href']
+#
+# print(title)
+# print(price)
+# print(img['href'])
+#########################
+
+# for guess
+
+# URL = 'https://www.guess.eu/it/catalog/view/uomo/orologi/orologio-multi-funzione-dettagli-cuciture/ww1256fmswc?color=g1'
+#
+#
+# page = requests.get(URL, headers=headers)
+# soup = BeautifulSoup(page.content, features='lxml')
+#
+# title = soup.find(class_="pull-left").text
+# price = soup.find(class_="actual").text
+# img = soup.find_all(class_="zoom-link")[-1].find('img')
+# img = img['src'][:84]+img['data-image']
+# print(title)
+# print(price)
+# print(img)
+#########################
+
+# for uspoloassn
+
+# URL = 'https://eg.uspoloassn.com/product/men-woven-shirt-604052.html'
+#
+#
+# page = requests.get(URL, headers=headers)
+# soup = BeautifulSoup(page.content, features='lxml')
+#
+# title = soup.find(class_="emos_H1").text
+# price = soup.find(class_="urunDetay_satisFiyat").text
+# img = soup.find_all(class_="mask")[-1].find_all('a')
+# img = 'https://eg.uspoloassn.com/'+img[0]['href']
+# print(title)
+# print(price)
+# print(img)
+#########################
+# for rlmedia
+
+# URL = 'https://www.ralphlauren.com/men-clothing-t-shirts/classic-striped-jersey-t-shirt/530274.html?dwvar530274_colorname=Boathouse%20Navy%2FBlue&cgid=men-clothing-t-shirts&webcat=Men%2FClothing%2FT%20Shirts%20%20%20Rugby%20Shirts#webcat=men%257Cclothing%257CT-Shirts%2520%2526%2520Rugby%2520Shirts&start=1&cgid=men-clothing-t-shirts'
+#
+#
+# page = requests.get(URL, headers=headers)
+# soup = BeautifulSoup(page.content, features='lxml')
+#
+# title = soup.find(class_="product-name").text.strip()
+# price = soup.find(class_="lowblack").text.strip()
+# img = soup.find(class_="popup-img")['data-img']
+#
+# print(title)
+# print(price)
+# print(img['data-img'])
+#########################

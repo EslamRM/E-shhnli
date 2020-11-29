@@ -1,0 +1,308 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<title>E-SHHNLI | {% trans 'The World In Your House' %}</title>
+	<!--fontawsome      -->
+	<script src="https://kit.fontawesome.com/66f45e81f9.js"
+	crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+	 rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Montserrat+Alternates&display=swap"
+	 rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/how-work.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/offer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/support.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/hover.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+</head>
+<body>
+<!-------------------------Start Header section---------------------------->
+		<nav class="header fixed-top navbar navbar-expand-lg">
+					<div class="logo navbar-brand">
+						<a href="/">E-Shhnli</a>
+					</div>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#externalContent" aria-controls="externalContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars" style="font-size: 30px;color: #f7b400;"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="externalContent">
+						<ul class="links navbar-nav mx-md-auto">
+						<li class="nav-item"><a class="nav-link" href="{% url 'how-work' %}">{% trans "How It Works" %}</a> </li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'offers' %}">{% trans "Offers" %}</a> </li>
+						<li class="nav-item"><a class="nav-link" href="">{% trans "FAQ" %}</a> </li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'support' %}"> {% trans "Support" %}</a></li>
+						</ul>
+						<ul class="regist navbar-nav ml-md-auto mr-3">
+							{% if user.is_authenticated %}
+							<li class="nav-item">
+								<div class="dropdown">
+									<button type="button" class="btn btn-danger btn-sm dropdown-toggle" id="dropdownMenu"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{% trans "Hello," %} {{request.user}}</button>
+          							<div class="dropdown-menu" aria-labelledby="dropdownMenu" x-placement="bottom-start"
+										 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 31px, 0px);">
+            							<a href="{% url 'com' %}" class="dropdown-item">{% trans "My Orders" %}</a>
+            							<a href="#" class="dropdown-item" id="wallet" data-id="my_wallet">{% trans "My Wallet" %}</a>
+            							<a href="{% url 'auth_logout' %}" class="dropdown-item">{% trans "Log out" %}</a>
+          							</div>
+								</div>
+							</li>
+							{% else %}
+							<li class="nav-item"><a class="nav-link" href="{% url 'auth_login' %}">{% trans "Login" %}</a></li>
+							<li><a href="{% url 'registration_register' %}">{% trans "Register" %}</a></li>
+							{% endif %}
+							<li class="nav-item"><a class="nav-link" href="{% url 'cart' %}">{% trans "Cart" %} <i class="fas fa-cart-plus"></i></a></li>
+							<li class="nav-item">
+							<div class="btn-group nav navbar-nav navbar-right language menu">
+  							<button class="btn btn-danger btn-sm dropdown-toggle language-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    							{% get_language_info for LANGUAGE_CODE as lang %}
+    							{{ lang.name_local }} ({{ lang.code }})
+  							</button>
+  							<div class="dropdown-menu munu" aria-labelledby="dropdownMenu2">
+      							<form action="{% url 'set_language' %}" method="post">
+          							{% csrf_token %}
+          							<input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+              							{% get_current_language as LANGUAGE_CODE %}
+              							{% get_available_languages as LANGUAGES %}
+              							{% get_language_info_list for LANGUAGES as languages %}
+              							{% for language in languages %}
+                  							<ul class="no-margins">
+                      							<button type="submit"
+                              							name="language"
+                              							value="{{ language.code }}"
+                              							class="{% if language.code == LANGUAGE_CODE %}selected{% endif %} dropdown-item fake-btn">
+                          							{{ language.name_local }}
+                      							</button>
+                  							</ul>
+              							{% endfor %}
+      							</form>
+  							</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+			</nav>
+
+{% include 'profile.html' %}
+<!-------------------------start disc-section-------------------------------->
+{% block content %}{% endblock %}
+
+<!--------------------footer section----------------------------------------->
+		 <!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+
+	  <!-- Grid row -->
+	  <div class="row">
+
+		<!-- Grid column -->
+		<div class="col-md-4 mx-auto">
+
+		  <!-- Content -->
+		  <h5 class="font-weight-bold  mt-3 mb-4 brand text-uppercase">E-Shhnli</h5>
+		  <p> {% trans "We helps you to shop easliy from any online store and order ." %}</p>
+
+		</div>
+		<!-- Grid column -->
+
+		<hr class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-2 mx-auto  shared-link">
+
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans "Shopping" %}</h5>
+
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="{% url 'how-work' %}"><i class="fa fa-angle-double-right"></i>{% trans "How Its Works" %}</a>
+			</li>
+			<li>
+			  <a href="#client"><i class="fa fa-angle-double-right"></i>{% trans "Brands" %}</a>
+			</li>
+		  </ul>
+
+		</div>
+		<!-- Grid column -->
+
+		<hr class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-2 mx-auto shared-link">
+
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans "Company" %}</h5>
+
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="#"><i class="fa fa-angle-double-right"></i>{% trans "About" %}</a>
+			</li>
+			<li>
+			  <a href="{% url 'support' %}"><i class="fa fa-angle-double-right"></i>{% trans "Contact" %}</a>
+			</li>
+			<li>
+			  <a href="#prices"><i class="fa fa-angle-double-right"></i>{% trans "Shanli’s Packages" %}</a>
+			</li>
+
+		  </ul>
+
+		</div>
+		<!-- Grid column -->
+
+		<hr class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-2 mx-auto shared-link">
+
+		  <!-- Links -->
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans "Help" %}</h5>
+
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="{% url 'faq' %}"><i class="fa fa-angle-double-right"></i>{% trans "FAQ" %}</a>
+			</li>
+			<li>
+			  <a href="{% url 'support' %}"><i class="fa fa-angle-double-right"></i>{% trans "Support" %}</a>
+			</li>
+			<li>
+		  </ul>
+
+		</div>
+		<!-- Grid column -->
+
+	  </div>
+	  <!-- Grid row -->
+
+	</div>
+	<!-- Footer Links -->
+	<hr>
+	<!-- Social buttons -->
+	<ul class="list-unstyled list-inline text-center social">
+	  <li class="list-inline-item facebook">
+		<a class="btn-floating btn-fb mx-1">
+		  <i class="fab fa-facebook-f"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item  twitter">
+		<a class="btn-floating btn-tw mx-1" href="#">
+		  <i class="fab fa-twitter"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item google-plus">
+		<a class="btn-floating btn-gplus mx-1" href="#">
+		  <i class="fab fa-google-plus-g"> </i>
+		</a>
+	  </li>
+	  <li class="list-inline-item linkedin ">
+		<a class="btn-floating btn-li mx-1" href="#">
+		  <i class="fab fa-linkedin-in"> </i>
+		</a>
+	  </li>
+	</ul>
+	<!-- Social buttons -->
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">
+		© 2020 Copyright By <span>E-Shhnli Team</span>
+	</div>
+	<!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <!---------------- Start Section Scrolling ---------------------->
+    <div id="scroll-up">
+	    <i class="fa fa-chevron-up fa-2x"></i>
+	</div>
+	<!---------------------------- setting box  section------------------------>
+	<div class="setting-box ">
+		<div class="toggle-setting">
+			<i class="fas fa-plus"></i>
+		</div>
+		<div class="Opinion">
+			<h6 class="text-center">{% trans "Do you like our service?" %}</h6>
+			<div class="img-box">
+			<img  src="{% static 'images/happy.svg' %}"  class="happy" alt="Happy" aria-placeholder="Happy">
+			<img src="{% static 'images/natural.svg' %}" class="natural" alt="Natural">
+			<img src="{% static 'images/sad.svg' %}" class="sad" alt="Sad">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat"
+	  attribution=setup_tool
+	  page_id="109642157437479"
+theme_color="#0084ff">
+	</div>
+
+<!-- js files  -->
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.easeScroll.js' %}"></script>
+<script src="http://css-tricks.com/examples/TextareaTricks/js/autoresize.jquery.min.js"></script>
+<script>
+
+     new WOW().init();
+
+</script>
+<script>$("html").easeScroll();
+</script>
+<script>
+	$(document).ready(function(){
+		"use strict";
+		const toggel=$('.custom-switch input');
+   var chicked=true;
+toggel.on("click",function(){
+    if(chicked){
+		chicked=!chicked;
+        $(".desc-commerical").removeClass("hide");
+        $(".desc .desc-box .find-link").addClass("hide");
+
+	}
+	else{
+		chicked=!chicked;
+		$(".desc-commerical").addClass("hide");
+        $(".desc .desc-box .find-link").removeClass("hide");
+	}
+
+});
+
+	})
+</script>
+<script>
+	window.fbAsyncInit = function() {
+	  FB.init({
+		xfbml            : true,
+		version          : 'v7.0'
+	  });
+	};
+
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

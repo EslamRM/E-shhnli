@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da39ec4b-5694-4bfc-bfb5-28aa5b4dd6f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/regbackend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/templatetags/add_attr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/how-work.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/offer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/online.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/retail_online.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/support.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/8f17e142547acb4de3255faa85a11fb2.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Add to Cart-rafiki.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Add to Cart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Air Support.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Checklist.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Endless-Constellation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Flat-Mountains.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Group Chat-rafiki.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Mobile login-bro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ONS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Online shopping-amico.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Online shopping.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Onshop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Rose-Petals.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Sun-Tornado.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/background-shop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bckround.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bgHeader.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/client.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/confirm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/confirm1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/download (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/download.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/e-wallet.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ecommerce-2140603_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/editbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hanger-cloth-fashionable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/happy-shop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/happy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/kk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/login.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/natural.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/not.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/online-order-concept_73459-318.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/payment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/removefromcat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shop1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shopp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shutter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/slider_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/slider_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ssss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/support1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/watch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/web-shop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/whysection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/wrist-watch-for-men.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/www.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.easeScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.nicescroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/com.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/how-work.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/loader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/offer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activation_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activation_complete_admin_pending.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activation_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activation_email.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/activation_email_subject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_complete_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_complete_email.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_complete_email_subject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_email.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/admin_approve_email_subject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_change_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/registration_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/registration_closed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/registration_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/registration_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/resend_activation_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/resend_activation_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/script.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/support.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/registration/activation_email.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/locale/ar/LC_MESSAGES/django.po">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="941" column="38" selection-start-line="941" selection-start-column="38" selection-end-line="941" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.nav-link</find>
+      <find>E-Shunli كيف يعمل</find>
+      <find>navbar</find>
+      <find>nav-lin</find>
+      <find>nav-link</find>
+      <find>.my</find>
+      <find>@</find>
+      <find>.desc</find>
+      <find>.desc-c</find>
+      <find>.w</find>
+      <find>commercial</find>
+      <find>.desc h5</find>
+      <find>.custom</find>
+      <find>@me</find>
+      <find>.desc .c</find>
+      <find>get</find>
+      <find>details</find>
+      <find>quantity</find>
+      <find>qty</find>
+      <find>qt</find>
+      <find>quantit</find>
+      <find>Details</find>
+      <find>cate</find>
+      <find>com</find>
+      <find>texta</find>
+      <find>.datadiv .it</find>
+      <find>@media</find>
+      <find>E-shhnli is an Egyptian</find>
+      <find>How</find>
+      <find>\n</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/register.css" />
+        <option value="$PROJECT_DIR$/templates/card.html" />
+        <option value="$PROJECT_DIR$/templates/script.txt" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/templates/registration/logout.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_change_done.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_change_form.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_reset_done.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/templates/registration/registration_complete.html" />
+        <option value="$PROJECT_DIR$/templates/registration/registration_form.html" />
+        <option value="$PROJECT_DIR$/templates/registration/password_reset_complete.html" />
+        <option value="$PROJECT_DIR$/templates/registration/pay.html" />
+        <option value="$PROJECT_DIR$/templates/edit.html" />
+        <option value="$PROJECT_DIR$/core/migrations/0026_calculator_promocode.py" />
+        <option value="$PROJECT_DIR$/core/migrations/0016_auto_20201011_2349.py" />
+        <option value="$PROJECT_DIR$/core/migrations/0016_auto_20201101_2006.py" />
+        <option value="$PROJECT_DIR$/templates/faq.html" />
+        <option value="$PROJECT_DIR$/core/migrations/0017_auto_20201102_1743.py" />
+        <option value="$PROJECT_DIR$/core/regbackend.py" />
+        <option value="$PROJECT_DIR$/templates/orders.html" />
+        <option value="$PROJECT_DIR$/../../Eshhnli/project/templates/orders.html" />
+        <option value="$PROJECT_DIR$/core/migrations/0018_auto_20201103_2209.py" />
+        <option value="$PROJECT_DIR$/core/migrations/0019_auto_20201105_0558.py" />
+        <option value="$PROJECT_DIR$/project/urls.py" />
+        <option value="$PROJECT_DIR$/core/admin.py" />
+        <option value="$PROJECT_DIR$/templates/how-work.html" />
+        <option value="$PROJECT_DIR$/core/forms.py" />
+        <option value="$PROJECT_DIR$/core/urls.py" />
+        <option value="$PROJECT_DIR$/project/settings.py" />
+        <option value="$PROJECT_DIR$/templates/offer.html" />
+        <option value="$PROJECT_DIR$/templates/order.html" />
+        <option value="$PROJECT_DIR$/templates/cart.html" />
+        <option value="$PROJECT_DIR$/static/css/navbar.css" />
+        <option value="$PROJECT_DIR$/templates/pay.html" />
+        <option value="$PROJECT_DIR$/core/paymob.py" />
+        <option value="$PROJECT_DIR$/core/models.py" />
+        <option value="E:/development/Documents/html/js_jquery.js" />
+        <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/css/app.css" />
+        <option value="$PROJECT_DIR$/core/views.py" />
+        <option value="$PROJECT_DIR$/templates/com.html" />
+        <option value="$PROJECT_DIR$/static/js/main.js" />
+        <option value="$PROJECT_DIR$/templates/support.html" />
+        <option value="$PROJECT_DIR$/templates/registration/activation_email.html" />
+        <option value="$PROJECT_DIR$/templates/registration/activation_email.txt" />
+        <option value="$PROJECT_DIR$/locale/ar/LC_MESSAGES/django.po" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="548" />
+    <option name="width" value="930" />
+    <option name="height" value="672" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="locale" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="locale" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="locale" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+              <item name="LC_MESSAGES" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eslam\Desktop\hat\project\core" />
+      <recent name="C:\Users\Eslam\Desktop\hat\project\templates" />
+      <recent name="C:\Users\Eslam\Desktop\hat\project\static\css" />
+      <recent name="C:\Users\Eslam\Desktop\env\project\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eslam\Desktop\hat\project\templates" />
+      <recent name="C:\Users\Eslam\Desktop\env\project\core" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da39ec4b-5694-4bfc-bfb5-28aa5b4dd6f3" name="Default Changelist" comment="" />
+      <created>1592479287576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592479287576</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17490494" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32814527" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49683145" visible="true" weight="0.30220494" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5031686" side_tool="true" weight="0.17898832" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1311787" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32814527" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49746513" visible="true" weight="0.17898832" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50253487" side_tool="true" weight="0.17898832" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/migrations/0042_auto_20201113_0153.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/migrations/0043_auto_20201113_0259.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/migrations/0047_auto_20201113_1336.py" />
+    <entry file="file://$PROJECT_DIR$/core/migrations/0048_auto_20201113_1339.py" />
+    <entry file="file://$PROJECT_DIR$/core/migrations/0046_auto_20201113_1305.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/offer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="12" selection-start-line="50" selection-start-column="3" selection-end-line="130" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/navbar.css" />
+    <entry file="file://$PROJECT_DIR$/core/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="48" column="88" selection-start-line="48" selection-end-line="48" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3961">
+          <caret line="233" column="28" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/development/Documents/html/js_jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="1245" lean-forward="true" selection-start-line="1245" selection-end-line="1245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="261" column="97" selection-start-line="261" selection-start-column="97" selection-end-line="261" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="4461" column="14" selection-start-line="4461" selection-start-column="14" selection-end-line="4461" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/paymob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="294" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="294" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/how-work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/activate.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/com.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#0;n#form#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/activation_email.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/admin_approve_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/admin_approve_complete_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/admin_approve_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_change_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_change_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/registration_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/registration_closed.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/registration_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/registration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/resend_activation_complete.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/resend_activation_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/admin_approve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/activation_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/ar/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="941" column="38" selection-start-line="941" selection-start-column="38" selection-end-line="941" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

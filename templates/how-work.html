@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<body>
+
+     <!-- -------------How shanli Work--------------------->
+     <div class="how-we-work">
+		 <div class="work-header">
+			 <h1>{% trans "How E-Shhnli Work" %}</h1>
+			 <p>
+				{% trans "E-Shhnli is an Egyptian registered company that provides online shopping services." %}
+			 </p>
+			 <h4>{% trans "Each step guides you to the next" %}</h4>
+		 </div>
+         <div class="container-fluid ">
+            <div class="work-box">
+             <div class="row">
+                 <div class="work-box-desc col-12 col-sm-12  col-md-7">
+                     <h6>
+                         <span class="step1">1</span>
+                        {% trans "Do the Shopping" %}
+                     </h6>
+                     <p class="lead">
+                        {% trans "From the Homepage, click on the “Stores” tab above to find out US stores or go direct to your desired one. Click on the store you want to purchase your item from. Take your full tour to compare and pick up your item." %}
+                     </p>
+                 </div>
+                 <div class="work-box-img col-12 col-sm-12 col-md-5">
+                     <img src="{% static 'images/www.gif' %}" alt="">
+                 </div>
+
+             </div>
+             <div class="row">
+                <div class="work-box-img col-12 col-sm-12 col-md-5">
+                    <img src="{% static 'images/Add to Cart.gif' %}" height="500px"  alt="">
+                </div>
+                <div class="work-box-desc col-12 col-sm-12 col-md-7">
+                    <h6>
+                        <span class="step1">2</span>
+                        {% trans "Put in Your Order" %}
+                    </h6>
+                    <p class="lead">
+                        {% trans "After settling on the product you want, copy its link and return to Gebhaly page to paste the link in the blank box." %}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="work-box-desc col-12 col-sm-12 col-md-7">
+                    <h6>
+                        <span class="step1">3</span>
+                        {% trans "Fill in the Product Details" %}
+                    </h6>
+                    <p class="lead">
+                        {% trans "Once you paste the link, you will find the details of your product automatically written down. Just take a look to review and enter any missing/needed data, such as color, size, and quantity, and then click on “Add to Cart” button." %}
+                     </p>
+                </div>
+                <div class="work-box-img col-12 col-sm-12 col-md-5">
+                    <img src="{% static 'images/Checklist.gif' %}" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="work-box-img col-12 col-sm-12 col-md-5">
+                    <img src="{% static 'images/Online shopping.gif' %}" height="500px"  alt="">
+                </div>
+                <div class="work-box-desc col-12 col-sm-12 col-md-7">
+                    <h6>
+                        <span class="step1">4</span>
+                        {% trans "Int. Shipping" %}
+                    </h6>
+                    <p class="lead">
+                        {% trans "After clicking on the “Checkout” tab, you have to choose your International Shipping type (whether to calculate it in Cairo Office or we review the order and send you full quotation) and then click on “Proceed to Checkout” tab. Hence, you need to register to undergo the process." %}
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="work-box-desc col-12 col-sm-12 col-md-7">
+                    <h6>
+                        <span class="step1">5</span>
+                        {% trans "Choose Payment Method" %}
+                    </h6>
+                    <p class="lead">
+                        {% blocktrans %} On the sidebar, have a final look at the total cost, including the total online price, customs,
+                        VAT, E-Shhnli fees, and international and local shipping, and confirm the Coupon Code, if you entered,
+                        affected the process. Then choose your payment method and tick the “Terms and Conditions” and “International Shipping fees”
+                        to proceed to payment. {% endblocktrans %}
+                     </p>
+                </div>
+                <div class="work-box-img  col-12 col-sm-12 col-md-5">
+                    <img src="{% static 'images/payment.svg' %}" alt="">
+               </div>
+
+            </div>
+            <div class="row">
+                <div class="work-box-img col-12 col-sm-12 col-md-5">
+                    <img src="{% static 'images/Air Support.gif' %}" height="5' %}00px"  alt="">
+                </div>
+                <div class="work-box-desc col-12 col-sm-12 col-md-7">
+                    <h6>
+                        <span class="step1">6</span>
+                        {% trans "Receive Your Order" %}
+                    </h6>
+                    <p class="lead">
+                        {% trans "After your product reaches our office in USA, our shipping company will bring it to Cairo. The process of delivering will be undertaken between 7 and 14 working days since the product is delivered to our office in USA." %}
+                    </p>
+                </div>
+            </div>
+            
+         </div>
+        </div>
+     </div>              
+
+    
+{% endblock %}

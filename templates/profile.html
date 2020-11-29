@@ -1,0 +1,106 @@
+{% load static %}
+{% load i18n %}
+<div id="MyWallet" style="display:none;margin-top:50px;">
+<div id="profile-con">
+	<div class="no-padding container profile" id="my_wallet">
+	<div class="row mb-2">
+		<div class="no-padding col">
+			<h1 class="myaccountheader">{% trans 'My Wallet' %}
+				<span class="myaccounwalletamount">(0 EGP)</span>
+			</h1>
+			<hr>
+			<div class="walletcol col">
+				<button type="button" class="walletbutton btn btn-">{% trans 'Withdraw' %}</button>
+				<button type="button" class="walletbutton btn btn-">{% trans 'Deposit' %}</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="no-padding container profile hidme" id="my_information">
+	<div class="row">
+		<div class="no-padding col"><div>
+			<h1 class="myaccountheader">{% trans 'My Information' %}
+			</h1>
+			<div class="registerpage mobilpadding row">
+				<div class="col-md-6 offset-md-3">
+					{% for pro in profile %}
+					<form method="post" action="{% url 'update' pro.user %}">
+						{% csrf_token %}
+						<div class="form-row">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label for="formBasicapp" class="form-label">{% trans 'Full Name' %}</label>
+									<input  type="text" id="formBasicapp" name="full_name" class="form-control" value="{{ pro.full_name }}">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label for="formBasicfloor" class="form-label">{% trans 'Email Address' %}</label>
+									<input  type="text" id="formBasicfloor" name="email" class="form-control" value="{{ pro.user.email }}">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+						<label for="Address1" class="form-label">{% trans 'Address 1' %}</label>
+						<input  type="text" id="Address1" name="address_1" class="form-control" value="{{ pro.address_1 }}"></div>
+						<div class="form-group">
+						<label for="Address2" class="form-label">{% trans 'Address 2' %}</label>
+						<input  type="text" id="Address2" name="address_2" class="form-control" value="{{ pro.address_2 }}"></div>
+						<div class="form-group">
+							<label for="formBasicAddress" class="form-label">{% trans 'Phone Number' %}</label>
+							<input  type="text" id="formBasicAddress" name="phone_number" class="form-control" value="{{ pro.phone_number }}">
+						</div>
+						<button  type="submit" class="loginbutton btn btn-primary">{% trans 'Save' %} </button>
+					</form>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="no-padding container profile hidme" id="my_password">
+	<div class="row">
+		<div class="no-padding col"><div>
+			<h1 class="myaccountheader">{% trans 'My Password' %}
+			</h1>
+			<div class="registerpage mobilpadding row">
+				<div class="col-md-6 offset-md-3">
+				<form method="post" action="{% url 'auth_password_change' %}">
+					{% csrf_token %}
+					<div class="form-group">
+						<label for="formBasicAddress1" class="form-label">{% trans 'Old Password' %}</label>
+						<input type="password" id="formBasicAddress1" name="old_password" class="form-control"></div>
+					<div class="form-group">
+						<label for="formBasicAddress2" class="form-label">{% trans 'New Password' %}</label>
+						<input type="password" id="formBasicAddress2" name="new_password1" class="form-control"></div>
+					<div class="form-group">
+						<label for="formBasicAddress3" class="form-label">{% trans 'Confirm new password.' %}</label>
+						<input type="password" id="formBasicAddress3" name="new_password2" class="form-control">
+					</div>
+					<button type="submit" class="loginbutton btn btn-primary">{% trans 'Save' %} </button>
+				</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+<div class="no-padding col mt-4">
+	<div class="myaccounttablinksdiv d-md-block">
+		<a class="myaccounttablinks" href="{% url 'com' %}">{% trans 'My Orders' %}</a>
+		<a class="myaccounttablinks myaccounttablinksActive prevent"  data-id="my_wallet" aria-current="page" href="">{% trans 'My Wallet' %}</a>
+		<a class="myaccounttablinks prevent" href="" data-id="my_information" >{% trans 'My Information' %}</a>
+		<a class="myaccounttablinks prevent" href="" data-id="my_password" >{% trans 'Password' %}</a>
+		<a class="myaccounttablinks" href="{% url 'offers' %}">{% trans 'Subscriptions' %}</a>
+	</div>
+</div>
+
+
+</div>
