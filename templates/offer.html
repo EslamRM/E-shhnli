@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<body>
+
+ <!----------------------------offer section---------------------------------------------->
+
+ <div class="container">
+	 <div class="no-padding col mt-4" style="margin-top:100px;">
+		 <div class="activecoponrow container"><div class="row">
+			 <hr>
+			 <div class="couponfutLeft col-lg-7 col-md-7 col-sm-12 col-12">
+				 <h2>{% trans 'Offer  1' %}</h2>
+				 <h1>
+					 <span>{% trans '70% OFF Customs,' %} </span>
+					 <span>{% trans '70% OFF VAT,' %} </span>
+				 </h1>
+				 <div class="couponDetailsDiv">
+					 <span class="couponCatsDetailsDDF">On
+						 <span>{% trans 'Clothes/Shoes/Bags/Wallets/' %}</span>
+						 <span>{% trans 'Watches/Sunglasses/Eyeglasses' %}</span>
+					 </span>
+				 </div>
+				 <div class="couponcounterF" id="demo">
+				 </div>
+			 </div>
+			 <div class="couponfutRight col-lg-5 col-md-5 col-sm-12 col-12">
+				 <div class="row">
+					 <div class="imgper col">
+						 <img src="{% static '/images/coupouact.png' %}">
+					 </div>
+				 </div>
+				 <div class="row">
+					 <div class="text-center col">
+						 <h3>{% trans 'Coupon Code' %}</h3>
+						 <input class="codeactive form-control mx-auto couponcopybutton2" id="copyTarget" readonly value="{{coupon}}" type="text"  >
+						 <button type="button" id="copyButton" class="couponcopybutton2 btn btn-primary">{% trans 'Copy Code' %}</button>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+		 </div>
+	 <hr>
+	 <div class="offer2">
+   <section class="price-table text-center">
+	<div class="container">
+	  <h2 class="h1">{% trans 'Our Amazing Prices' %}</h2>
+	  <div class="row">
+		<div class="col-lg-4 col-sm-6 col-md-6 xs-12">
+		  <div class="price-box  box1 wow fadeInUp  animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>800<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+
+            <h2 class="text-info"> {% trans 'No limits' %}</h2>
+			  <form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="800" hidden name="pay">
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-sm-6  xs-12">
+		  <div class="price-box box2 wow fadeInUp  animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>800<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+            <h2 class="text-info">{% trans 'More discounts' %}</h2>
+			<form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="800" hidden name="pay">
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-sm-6 xs-12 ">
+		  <div class="price-box box3 wow fadeInDown animated" data-wow-duration="2s" data-wow-offset="400" style="visibility: visible; animation-duration: 2s;">
+			<div class="price">
+				<span>EG</span>
+				<h5>499<br></h5>
+				<p>{% trans 'per month' %}</p>
+			</div>
+            <h2 class="text-info"> {% trans 'Platinum' %}</h2>
+			<form method="post" action="{% url 'payment' %}">
+					{% csrf_token %}
+			  <input value="499" hidden name="pay">
+			<ul class="list-unstyled">
+				<ul class="list-unstyled">
+				<li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF Customs' %}</li>
+			   <li><i class="far fa-check-circle" aria-hidden="true"></i> {% trans '100% OFF VAT' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$1 + 9% E-shhnli Fees' %}</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans '$3.4 per 100 gm' %}	</li>
+			   <li> <i class="far fa-check-circle" aria-hidden="true"></i> {% trans 'Purchase limit: 50 K EGP/Mont' %}</li>
+			</ul>
+				</ul>
+				<button type="submit"  class="sub"><a class="btn ">{% trans 'Subscribe' %}</a></button>
+		  </form>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+  </section>
+</div>
+ </div>
+<!------------------------Start Section Scrolling-------------------------------------->
+    <div id="scroll-up">
+	    <i class="fa fa-chevron-up fa-2x"></i>
+    </div>
+</body>
+<script>
+	document.getElementById("copyButton").addEventListener("click", function() {
+    copyToClipboard(document.getElementById("copyTarget"));
+});
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+{% endblock %}
