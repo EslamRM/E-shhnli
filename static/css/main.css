@@ -1153,6 +1153,7 @@ button .menu i{
 }
 .popup{
     margin: 0 auto;
+    margin-top: 5%;
 }
 .form{
     text-align:center;
@@ -1160,8 +1161,7 @@ button .menu i{
 .edit{
     display:none;
     position: fixed;
-    top: 20%;
-    left: 7%;
+    top: 13%;
     z-index: 99;
 }
 .itm{
