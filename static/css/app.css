@@ -3169,7 +3169,12 @@ html {
   margin-top: 20px; }
 
 .couponcounter {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ff9258;
+  margin-right: 30px;
+}
 
 .couponcounter span {
   display: inline-block;
