@@ -1161,7 +1161,7 @@ button .menu i{
 .edit{
     display:none;
     position: fixed;
-    top: 13%;
+    top: 8%;
     z-index: 99;
 }
 .itm{
