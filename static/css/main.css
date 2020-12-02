@@ -1161,7 +1161,6 @@ button .menu i{
     display:none;
     position: fixed;
     top: 20%;
-    left: 7%;
     z-index: 99;
 }
 .itm{
