@@ -1,6 +1,5 @@
 import os
 import psycopg2
-import django_heroku
 import dj_database_url
 from django.utils.translation import gettext_lazy as _
 
@@ -178,4 +177,3 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-django_heroku.settings(locals())
