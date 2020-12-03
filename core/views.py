@@ -28,7 +28,7 @@ class ActivateLanguageView(View):
 @login_required
 def payments(request):
     profile = Profile.objects.filter(user=request.user)
-    if profile True:
+    if profile:
         
         billing_info = {}
         for p in profile:
