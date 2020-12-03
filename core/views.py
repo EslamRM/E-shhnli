@@ -46,7 +46,7 @@ def payments(request):
         return HttpResponseRedirect(iframe + step3['payment_key'])
     
     else:
-        return redirect('accounts/register')
+        return redirect('/accounts/register')
         
 def index(request):
     if request.user.is_authenticated:
@@ -154,7 +154,7 @@ def cart(request):
         profile = Profile.objects.filter(user=request.user)
         count = orders.count()
     else:
-        return redirect('accounts/login/')
+        return redirect('/accounts/login/')
     return render(request, 'cart.html',{'orders':orders,'count':count,'calculate':calculate,'profile':profile})
 
 def clear_com(request):
