@@ -28,22 +28,26 @@ class ActivateLanguageView(View):
 @login_required
 def payments(request):
     profile = Profile.objects.filter(user=request.user)
-    billing_info = {}
-    for p in profile:
-        billing_info = {"apartment":p.address_1,"email": p.user.email,"floor": "NA",
-                        "first_name": p.full_name.split(' ')[0],
-                        "street":p.address_2,"building":"NA",
-                        "phone_number": str(p.phone_number),
-                        "shipping_method": "PKG", "postal_code": p.ZIP,"city": p.address_1,
-                        "country": p.country, "last_name": p.full_name.split(' ')[1],"state": p.state}
-    step1 = auth(api_key)
-    step2 = create_order(step1, request.POST.get('pay'), 'EGP')
-    step3 = pay(step2,106175, billing_info)
-    step4 = transaction_res(step3)
-    iframe = "https://accept.paymob.com/api/acceptance/iframes/96321?payment_token="
-    return HttpResponse(step4['pending'])
-
-
+    if profile True:
+        
+        billing_info = {}
+        for p in profile:
+            billing_info = {"apartment":p.address_1,"email": p.user.email,"floor": "NA",
+                            "first_name": p.full_name.split(' ')[0],
+                            "street":p.address_2,"building":"NA",
+                            "phone_number": str(p.phone_number),
+                            "shipping_method": "PKG", "postal_code": p.ZIP,"city": p.address_1,
+                            "country": p.country, "last_name": p.full_name.split(' ')[1],"state": p.state}
+        step1 = auth(api_key)
+        step2 = create_order(step1, request.POST.get('pay'), 'EGP')
+        step3 = pay(step2,75358, billing_info)
+        step4 = transaction_res(step3)
+        iframe = "https://accept.paymob.com/api/acceptance/iframes/96321?payment_token="
+        return HttpResponseRedirect(iframe + step3['payment_key'])
+    
+    else:
+        return redirect('accounts/register')
+        
 def index(request):
     if request.user.is_authenticated:
         profile = Profile.objects.filter(user=request.user)
