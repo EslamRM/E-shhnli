@@ -97,9 +97,14 @@ def support (request):
         send_mail(subject=name, message=message, from_email=request.user, recipient_list=[EMAIL_HOST_USER],
                   fail_silently=False)
         return HttpResponse('Email has been send successfully')
-    else:
+
+    elif request.user.is_authenticated:
         profile = Profile.objects.filter(user=request.user)
         return render(request,'support.html',{'profile':profile})
+
+    else:
+        return render(request,'support.html')
+
 
 
 def faq (request):
