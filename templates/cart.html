@@ -9,7 +9,7 @@
  {% endif %}
 <div class="container popup">
     <div style="height: 324px; transition: height 250ms ease 0ms;">
-        <div class="react-reveal linkItemDataCont" style="animation-fill-mode: both; animation-duration: 875ms; animation-delay: 125ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-1;">
+        <div class="react-reveal linkItemDataCont" style="height: auto;animation-fill-mode: both; animation-duration: 875ms; animation-delay: 125ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-61475453695474-1;">
 
                 <form action="{% url 'add_cart' %}" name="form" method="post" enctype='multipart/form-data'>
                             {% csrf_token %}
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="addcol col-lg-2 col-md-2 col-sm-12 col-12">
+                    <div class="addcol col-lg-2 col-md-2 col-sm-12 col-12 text-center">
                             <div class="form-row mt-5 text-danger">
                                 <div class="col">
                                     <h5 class="form-label">{% trans "Price ($)" %}</h5>
