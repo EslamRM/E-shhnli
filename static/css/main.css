@@ -1163,6 +1163,8 @@ button .menu i{
     position: fixed;
     top: 8%;
     z-index: 99;
+    overflow-y:scroll;
+    overflow-x:hidden;		
 }
 .itm{
     float:right;
