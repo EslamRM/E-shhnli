@@ -24,7 +24,7 @@
                     <div class="datadiv">
                        <img src="/img/brands/amazon-logo.png" alt="" width="70.8px" >
                          <input name="logo" value="{{logo}}" hidden>
-                        <h2><input name="title" placeholder="Title" value="{{title}}"></h2>
+                        <h2><input name="title" placeholder="Title" value="{{title}}" required></h2>
                         <a target="_blank" href="{{url}}" name="url">
                              <input name="url" value="{{url}}" hidden>
                         {{ url|slice:":80" }} .....
@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="col-lg-2 col-md-2 col-sm-6 col-12">
                                     <label class="form-label">{% trans "Qty" %}</label>
-                                    <input inputmode="numeric" min="1" type="number" class="form-control" name="qty">
+                                    <input inputmode="numeric" min="1" type="number" class="form-control" name="qty" required>
                                 </div>
                             </div>
 
